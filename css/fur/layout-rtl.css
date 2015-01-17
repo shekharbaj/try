@@ -1,0 +1,106 @@
+
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: right !important;
+}
+
+@media (min-width: 768px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: right !important;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: right !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: right !important;
+    }
+}
+.site_feedback {
+    bottom: 5px;
+    position: fixed;
+    left: 0;
+    text-align: right;
+    width: 65px;
+}
+.list-inline {
+    margin-bottom: 0;
+    text-align: right;
+    float: left;
+    margin-left: 15px;
+}
+.custom_float {
+    float: left;
+}
+.navbar-nav > li {
+    float: right;
+}
+.footer_nav {
+    clear: both;
+    float: right;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+}
+
+
+
+.footer_nav li:first-child {
+    padding-left: 10px;
+}
+.footer_nav li {
+    border-left: 1px solid #B0700F;
+    border-right: 0px solid #B0700F;
+    display: inline-block;
+    line-height: 11px;
+    list-style: none outside none;
+    padding: 0 10px;
+    width: auto;
+    float: right;
+}
+.footer_nav li:last-child {
+    border-left: 0px;
+}
+@media only screen and (min-width: 767px){
+    .powered {
+        background: url("images/fur/tcs_logo.jpg") no-repeat right top;
+        float: right;
+        width: 100%;
+        text-align: right;
+        padding: 0 103px 0 0;
+    }
+}
+.powered{
+    background: url("images/fur/tcs_logo.jpg") no-repeat 3px top left;
+    float: right;
+    width: 100%;
+    text-align: right;
+    margin: 0 10px 0 0;
+}
+.copy {
+    color: #727171;
+    font-size: 12px;
+    text-align: left;
+    margin: 0 0 0 10px;
+}
+.social_media_con {
+    float: left;
+    width: 136px;
+}
+.newsletter {
+    display: block;
+    text-align: left;
+}
+
+.popup_tab{
+    margin: 0 15px 0 0;
+    text-align: right;
+}
+.popup_tab label.radio{
+    float:right;
+}

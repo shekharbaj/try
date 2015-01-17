@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compitable" content="IE=edge">
+
+    <title>GoFursan</title>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/flat-ui.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/theme.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-select.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/vallenato.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-social.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/datepicker.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/slider.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/font-awesome.css" media="all"/>
+
+</head>
+<body>
+<div class="container-fluid">
+<div class="container-fluid border_bot bg_wht">
+    <div class="container ">
+        <div class="row mrgn-tp-bt10">
+            <div class="col-lg-2 col-sm-3 col-xs-12 col-md-3">
+                <a href="index.html" class="logo">
+                    <img class="img-responsive" src="images/fur/gofursan-logo.png">
+                </a>
+            </div>
+            <div class="col-lg-10 col-sm-9 col-xs-12  col-md-9">
+                <div class="row">
+                    <ul class="list-inline change_color">
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">Register</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal1">Sign In</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+
+                    <!-- Register Modal HTML Here -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close close1" data-dismiss="modal"><span
+                                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h1 class="modal-title" id="myModalLabel">Register</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                            <label for="exampleInputEmail1">Register Using Your Facebook Account</label>
+                                            <a class="btn btn-block btn-social btn-facebook"
+                                               onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                                <i class="fa fa-facebook"></i> Register with Facebook</a></div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1"> or Register with your Email
+                                                        Id</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                           placeholder="Enter email">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" checked="checked" value="" id="checkbox2"
+                                                           data-toggle="checkbox" checked="">
+                                                    I am interested to receive Promotions and Special Offers.</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="" id="checkbox1"
+                                                           data-toggle="checkbox">
+                                                    I have read, understood and accept the Privacy Policy and Terms and
+                                                    Conditions.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4 "><a href="manage_my_bookings.html"
+                                                                                    class="btn btn-block btn-primary">Register</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sign In Modal HTML Here -->
+                    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close close1" data-dismiss="modal"><span
+                                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h1 class="modal-title" id="myModalLabel">Sign In</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-5 col-sm-5 "><a
+                                                class="btn btn-block btn-social btn-facebook"
+                                                onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                            <i class="fa fa-facebook"></i> Sign In with Facebook</a></div>
+                                        <div class="col-lg-7 col-md-7 col-sm-7 ">
+                                            <label for="exampleInputEmail1"> <strong>OR</strong> Sign In using your
+                                                Email ID</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Email ID</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                           placeholder="Your registered email id">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">Password</label>
+                                                    <input type="password" class="form-control"
+                                                           id="exampleInputPassword1" placeholder="Password">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4 pd-top25"><a class="link" href="">I
+                                            Forgot my Password</a></div>
+                                    </div>
+                                    <div class="row pd-top10">
+                                        <div class="col-lg-4 col-md-4 col-sm-4"><a href="manage_my_bookings.html"
+                                                                                   class="btn btn-block btn-primary">Sign
+                                            In</a></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p>Sign in to manage your bookings and update your profiles.<br>
+                                                if you don’t have an Account&nbsp; <a href="#" data-dismiss="modal"
+                                                                                      class="link_paragraph"
+                                                                                      data-toggle="modal"
+                                                                                      data-target="#myModal"
+                                                                                      target="_top">Register Now</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 pd_R">
+                        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                        class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand visible-xs" href="#">Menu</a></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav custom_float">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="flight_search.html">Flights</a></li>
+                    <li><a href="hotel_search.html">Hotels</a></li>
+                    <li><a href="car_search.html">Cars</a></li>
+                   <li><a href="fh_search.html">Flight + Hotels</a></li>
+
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle " data-toggle="dropdown">More <span class="caret"></span></a>
+                     <ul class="dropdown-menu" role="menu">
+					<li><a href="sightseeing_search.html">Sightseeing</a></li>
+                    <li><a href="transfer_search.html">Transfers</a></li>
+                    <li><a href="cruises_search.html">Cruises</a></li>
+                    <li><a href="package_search.html">Packages</a></li>
+                    <li><a href="fc_search.html">Flights + Car</a></li>
+                    <li><a href="other_services.html">Other Services</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+
+
+<div class="row mrgn-tp-bt20">
+<div class="col-lg-3 col-md-3 col-sm-4 ">
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading">
+
+    <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            Modify Your Search
+            <i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i>
+        </a>
+    </h4>
+
+</div>
+<div id="collapseOne" class="panel-collapse collapse">
+
+<div class="panel-body">
+<div class="my-container2">
+
+
+<div class="row ">
+    <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+        <label class="radio wht">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+            Round Trip</label>
+    </div>
+    <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+        <label class="radio wht">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio">
+            One Way</label>
+    </div>
+    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+        <label class="radio wht transfer_a">
+            <input type="radio" name="optionsRadios" id="" value="option1" data-toggle="radio">
+            Multi City</label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>From</label>
+            <input type="email" class="form-control map_icon" id="" placeholder="City or Airport"/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>To</label>
+            <input type="email" class="form-control map_icon" id="" placeholder="City or Airport"/>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Daparture Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker1">
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Time</label>
+            <select title="herolist" value="Any Time" class="select-block">
+                <option selected="selected">Any Time</option>
+                <option>08 - 12</option>
+                <option>12 - 18</option>
+                <option>18 - 22</option>
+                <option>22 - 02</option>
+                <option>02 - 08</option>
+            </select>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Return Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker2">
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Time</label>
+            <select title="herolist" value="Any Time" class="select-block">
+                <option selected="selected">Any Time</option>
+                <option>08 - 12</option>
+                <option>12 - 18</option>
+                <option>18 - 22</option>
+                <option>22 - 02</option>
+                <option>02 - 08</option>
+            </select>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Adult(s)</label>
+            <select title="herolist" value="1" class="select-block">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="allow1">
+            (12 + Years)
+
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Children</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="allow1">
+            (2 - 11 Years)
+
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Infants</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="allow1">
+            (Under 2 Years)
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Currency</label>
+            <select title="herolist" value="SAR" class="select-block">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="SAR" selected="selected">SAR</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <label class="wht"><b>Advance Search Options</b></label>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Airline Preference</label>
+            <input type="email" class="form-control map_icon" id="" placeholder="Airline Name"/>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Cabin Class</label>
+            <select title="herolist" value="Accomodation" class="select-block">
+                <option value="Accomodation" selected="selected">Economy</option>
+                <option value="Airport">Airport</option>
+                <option value="Other">Other</option>
+                <option value="Port">Port</option>
+                <option value="Station">Station</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox check_SH">
+            <label class="wht">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                My Dates are Flexible (+ / - 3 Days)
+            </label>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox check_SH">
+            <label class="wht">
+                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox">
+                Show only Direct Flights
+            </label>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 col-md-6 col-sm-6 pull-right mrgn-top10 ">
+        <a href="#" class="btn btn-block btn-primary">Search</a>
+    </div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading normal">
+    <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            Filter Results
+            <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+        </a>
+    </h4>
+</div>
+
+
+<div id="collapseTwo" class="panel-collapse collapse in">
+
+<div class="panel-body">
+<div class="my-container2">
+
+
+<div class="row_1">
+<div id="accordion-container">
+
+
+<div class="link_clear_outer_div">
+    <a class="link_clear pull-right" id="check_div_click_4" href="javascript:void(0)">Clear Filters</a>
+</div>
+
+<h2 class="accordion-header">Stops</h2>
+
+<div class="accordion-content">
+
+    <div class="check_div_4">
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    0<span class="gray_text">SAR 2000</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    1<span class="gray_text">SAR 1000</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    2 +<span class="gray_text">SAR 500</span>
+                </label>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="link_clear_outer_div">
+    <a class="link_clear pull-right" id="check_div_click_1" href="javascript:void(0)">Clear Filters</a>
+</div>
+<h2 class="accordion-header">By Airlines</h2>
+
+<div class="accordion-content">
+
+    <div class="check_div_1">
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Saudi Arabian Airlines <span class="gray_text">SAR 780</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Gulf Air <span class="gray_text">SAR 800</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Qatar Airways <span class="gray_text">SAR 1000</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Fly Dubai <span class="gray_text">SAR 2000</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Kuwait Airways <span class="gray_text">SAR 1500</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Emirates <span class="gray_text">SAR 1200</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Oman Air <span class="gray_text">SAR 1100</span>
+                </label>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--<div class="link_clear_outer_div">
+<a class="link_clear pull-right" id="check_div_click_2" href="javascript:void(0)">Clear Filters</a>
+            </div>
+<h2 class="accordion-header">By Airlines Consortium</h2>
+<div class="accordion-content">
+    <div class="check_div_2">
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Star Alliance<span class="gray_text">(60)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Sky Team<span class="gray_text">(17)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                One World<span class="gray_text">(72)</span>
+            </label>
+
+        </div>
+    </div>
+</div>
+
+</div>-->
+
+
+<h2 class="accordion-header clos ed-air clo sed-time">By Timings</h2>
+
+<div class="acc ordion-content pos_relative">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div><label>
+        Outbound Time
+        </label></div>
+        
+        
+    <div class="btn-g roup mrgn-btm" data-toggle="buttons">
+    <label class="btn btn-primary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked>Dep.
+    </label>
+    <label class="btn btn-primary">
+    <input type="radio" name="options" id="option2" autocomplete="off">Arr.
+    </label>    
+        <span id="sl1-value">0</span>
+            </div>
+        <input type="text" class="span2" id="sl1" value="0" data-slider-min="0" data-slider-max="24" data-slider-step="1" data-slider-orientation="horizontal" data-slider-value="[0,24]" data-slider-selection="after" data-slider-tooltip="hide">
+       
+    </div>
+    
+    
+    
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div><label>
+        Return Time
+        </label></div>
+        
+        
+    <div class="btn-g roup" data-toggle="buttons">
+    <label class="btn btn-primary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked>Dep.
+    </label>
+    <label class="btn btn-primary">
+    <input type="radio" name="options" id="option2" autocomplete="off">Arr.
+    </label>    
+        <span id="sl2-value">0</span>
+            </div>
+        <input type="text" class="span2" id="sl2" value="0" data-slider-min="0" data-slider-max="24" data-slider-step="1" data-slider-orientation="horizontal" data-slider-value="[0,24]" data-slider-selection="after" data-slider-tooltip="hide">
+       
+    </div>
+
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 ">
+<div class="row">
+    <div class="col-lg-10 col-md-10 col-sm-10">
+        <div class="row_1">
+            <div class="arrow_div"><strong>Dubai</strong><i class="fa fa-long-arrow-right"></i></div>
+            <div class="arrow_div"><strong>Kuwait</strong><i class="fa fa-long-arrow-right"></i></div>
+            <div class="arrow_div"><strong>Dubai</strong></div>
+        </div>
+        <div class="row_1">
+            <span class="date_font_size">Wed, 15 Oct - Wed, 22 Oct <strong>|</strong> 1 adult </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-lg-2 col-md-2 col-sm-2">
+
+        <div class="row_1">
+            <div class="big_name_transfer_1">
+                <h2>15 Flights</h2>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="col-lg-12 padding_con0">
+<div class="row">
+
+<!-- Tab panes -->
+<div class="white_content_area">
+<div class="row">
+
+
+    <div class="col-lg-12">
+        <ul class="list-inline list_inline_9" id="list-inline">
+            <li><b>Sort By</b></li>
+            <li><a href="#">Duration</a></li>
+            <li><a href="#">Featured Airline</a></li>
+            <li class="active"><a href="#">Price</a></li>
+            <li><a href="#">Departure Time</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-10">
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+            <label> <strong class="font_size13">Airline Details</strong></label>
+
+            <div class="">
+                <img class="" src="images/fur/f1.jpg">
+
+            </div>
+            <div class="airline_name">
+                Air India
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="row_1">
+                <label> <strong class="font_size13">Departure Details</strong></label>
+            </div>
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>Dubai DXB (Dubai Intl Airport)<br>
+                        Wed, 12-Feb-2014 17:00</p>
+                    <label><strong class="font_size13">Economy</strong></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="row_1">
+                <label> <strong class="font_size13">Arrival Details</strong></label>
+            </div>
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                        Fri, 14 - Feb-2014 19:05</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="row_1">
+                <label><strong class="font_size13">Time and Stops</strong></label>
+            </div>
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>
+                        1 Stop<br>
+                        Flying Time 2 h 05m</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mrgn-top10">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <div class="">
+                <img class="" src="images/fur/f2.jpg">
+
+                <div class="airline_name">
+                    Singapore Airline
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                        Fri, 14 - Feb-2014 19:05</p>
+                    <label><strong class="font_size13">Economy</strong></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>Dubai DXB (Dubai Intl Airport)<br>
+                        Wed, 14-Feb-2014 19:05</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>
+                        1 Stop<br>
+                        Flying Time 2 h 05m</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+    <h2 class="maroon text-center">SAR 860</h2>
+    <a href="flight_review_selection.html" class="btn btn-block btn-primary">Book</a>
+
+    <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+        <a data-toggle="popover" data-content="Know More">
+            <img src="images/fur/Diamond.png" width="26" height="16">
+
+            <p>goRewards 100</p>
+        </a>
+
+    </div>
+    <div class="modal fade" id="rewards" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close close1" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span
+                            class="sr-only">Close</span></button>
+                    <iframe class="iframe_width" src="rewards.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="clearfix"></div>
+<div class="row mrgn-top10">
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+
+            <ul class="list-inline flight_ul">
+                <li><a href="#" onClick="javascript:openpopup('FD');" data-toggle="modal"
+                       data-target="#bs-example-modal-lg">Flight Details</a></li>
+                <li><a href="#" onClick="javascript:openpopup('FR');" data-toggle="modal"
+                       data-target="#bs-example-modal-lg">Fare Rules</a></li>
+                <li><a href="#" onClick="javascript:openpopup('BI');" data-toggle="modal"
+                       data-target="#bs-example-modal-lg">Baggage Information</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row_1 collapse pos_relative" id="collapseH">
+    <div class="add_color">
+        <div class="col-lg-10 col-md-10 col-sm-10">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+
+                    <label> <strong class="font_size13">Airline Details</strong></label>
+
+                    <div class="">
+                        <img class="" src="images/fur/f1.jpg">
+
+                        <div class="airline_name">
+                            Air india
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="row_1">
+                        <label> <strong class="font_size13">Departure Details</strong></label>
+                    </div>
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>Dubai DXB (Dubai Intl Airport)<br>
+                                Wed, 12-Feb-2014 17:00</p>
+                            <label><strong class="font_size13">Economy</strong></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="row_1">
+                        <label> <strong class="font_size13">Arrival Details</strong></label>
+                    </div>
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                                Fri, 14 - Feb-2014 19:05</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="row_1">
+                        <label><strong class="font_size13">Time and Stops</strong></label>
+                    </div>
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>
+                                1 Stop<br>
+                                Flying Time 2 h 05m</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mrgn-top10">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="">
+                        <img class="" src="images/fur/f2.jpg"></div>
+                    <div class="airline_name">
+                        Singapore Airline
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                                Fri, 14 - Feb-2014 19:05</p>
+                            <label><strong class="font_size13">Economy</strong></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>Dubai DXB (Dubai Intl Airport)<br>
+                                Wed, 14-Feb-2014 19:05</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>
+                                1 Stop<br>
+                                Flying Time 2 h 05m</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <h2 class="maroon text-center">SAR 860</h2>
+            <a href="flight_review_selection.html" class="btn btn-block btn-primary">Book</a>
+
+            <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+                <a data-toggle="popover" data-content="Know More">
+                    <img src="images/fur/Diamond.png" width="24" height="16">
+
+                    <p>goRewards 100</p>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="row_1 mrgn-top10">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+
+                <ul class="list-inline flight_ul">
+                    <li><a href="#" onClick="javascript:openpopup('FD');" data-toggle="modal"
+                           data-target="#bs-example-modal-lg">Flight Details</a></li>
+                    <li><a href="#" onClick="javascript:openpopup('FR');" data-toggle="modal"
+                           data-target="#bs-example-modal-lg">Fare Rules</a></li>
+                    <li><a href="#" onClick="javascript:openpopup('BI');" data-toggle="modal"
+                           data-target="#bs-example-modal-lg">Baggage Information</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-5 flight_more_result">
+    <label class="mrgn-0"><a class="link_shadow fa fa-plus" data-toggle="collapse" data-target="#collapseH"
+                             id="collapseP"><span>1 more options at same price</span></a></label>
+
+</div>
+
+
+</div>
+
+<div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <button type="button" class="close close1" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <iframe class="iframe_width" id="abc" src="flight_description.html"></iframe>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row">
+    <div class="col-lg-10 col-md-10 col-sm-10">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+
+                <label> <strong class="font_size13">Airline Details</strong></label>
+
+                <div class="">
+                    <img class="" src="images/fur/f1.jpg">
+                </div>
+                <div class="airline_name">
+                    Air india
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="row_1">
+                    <label> <strong class="font_size13">Departure Details</strong></label>
+                </div>
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>Dubai DXB (Dubai Intl Airport)<br>
+                            Wed, 12-Feb-2014 17:00</p>
+                        <label><strong class="font_size13">Economy</strong></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="row_1">
+                    <label> <strong class="font_size13">Arrival Details</strong></label>
+                </div>
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                            Fri, 14 - Feb-2014 19:05</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="row_1">
+                    <label><strong class="font_size13">Time and Stops</strong></label>
+                </div>
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>
+                            1 Stop<br>
+                            Flying Time 2 h 05m</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mrgn-top10">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="">
+                    <img class="" src="images/fur/f2.jpg"></div>
+                <div class="airline_name">
+                    Singapore Airline
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                            Fri, 14 - Feb-2014 19:05</p>
+                        <label><strong class="font_size13">Economy</strong></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>Dubai DXB (Dubai Intl Airport)<br>
+                            Wed, 14-Feb-2014 19:05</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>
+                            1 Stop<br>
+                            Flying Time 2 h 05m</p>
+                    </div>
+                    <label><strong class="font_size13">Economy</strong></label>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-2">
+        <h2 class="maroon text-center">SAR 860</h2>
+        <a href="flight_review_selection.html" class="btn btn-block btn-primary">Book</a>
+
+
+        <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+            <a data-toggle="popover" data-content="Know More">
+                <img src="images/fur/Diamond.png" width="26" height="16">
+
+                <p>goRewards 100</p>
+            </a>
+
+        </div>
+
+
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="row mrgn-top10">
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+
+                <ul class="list-inline flight_ul">
+                    <li><a href="#" onClick="javascript:openpopup('FD');" data-toggle="modal"
+                           data-target="#bs-example-modal-lg">Flight Details</a></li>
+                    <li><a href="#" onClick="javascript:openpopup('FR');" data-toggle="modal"
+                           data-target="#bs-example-modal-lg">Fare Rules</a></li>
+                    <li><a href="#" onClick="javascript:openpopup('BI');" data-toggle="modal"
+                           data-target="#bs-example-modal-lg">Baggage Information</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="clearfix bdr_bottom"></div>
+
+
+<div class="text-right">
+    <ul class="pagination">
+        <li><a href="javascript:void(0)">&laquo;</a></li>
+        <li class="active"><a href="javascript:void(0)">1</a></li>
+        <li><a href="javascript:void(0)">2</a></li>
+        <li><a href="javascript:void(0)">3</a></li>
+        <li><a href="javascript:void(0)">4</a></li>
+        <li><a href="javascript:void(0)">5</a></li>
+        <li><a href="javascript:void(0)">&raquo;</a></li>
+    </ul>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+    <div class="container-fluid">
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 ">
+                    <ul class="footer_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">Email </a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"> F.A.Q. </a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a class="no" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="clearfix visible-sm"></div>
+
+                <div class="col-lg-4 col-md-4 col-sm-9 col-xs-12 ">
+                    <div class="col-lg-5 col-md-5 col-sm-3">
+                        <strong class="newsletter">Newsletter</strong>
+                    </div>
+
+
+                    <div class="col-lg-7 col-md-7 col-sm-9">
+
+                        <div class="form-group">
+                            <input type="text" value="Enter your Email Address" class="form-control bdr" id="inputEmail"
+                                   placeholder="Email">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                    <div class="social_media_con">
+                        <ul class="list">
+                            <li><a href="#" class="zoomimg"><img src="images/fur/facebook.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/twitter.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/google.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/instagram.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/linkedin.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container  my-container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
+                    <div class="powered">Powered by: Travel Cloud Suite</div>
+
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 ">
+                    <div class="copy">
+                        GoFursan &copy; 2014. All Rights Reserved.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript" src="javascript/fur/jquery.min.v.1.11.1.js"></script>
+<script src="javascript/fur/bootstrap.min.js"></script>
+<script src="javascript/fur/bootstrap-datepicker.js"></script>
+<script src="javascript/fur/bootstrap-tooltip.js"></script>
+<script src="javascript/fur/bootstrap-select1.js"></script>
+<script src="javascript/fur/flatui-checkbox.js"></script>
+<script src="javascript/fur/flatui-radio.js"></script>
+<script src="javascript/fur/application.js"></script>
+<script src="javascript/fur/bootstrap-slider.js"></script>
+<script src="javascript/fur/vallenato.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.pop img').popover({ trigger: "hover", placement: 'top' });
+        $('.pop a').popover({ trigger: "hover", placement: 'top' });
+    });
+</script>
+<script type="text/javascript">
+    $('#collapseP').on('click', function (e) {
+        $('#collapseP').toggleClass('fa-minus , fa-plus', function () {
+            $(this).slideToggle("slow")
+        });
+    });
+    $(function () {
+        $('#datetimepicker1').datepicker();
+        $('#datetimepicker2').datepicker();
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+            $("select[title='herolist']").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
+        });
+        $('.in').siblings().addClass('current');
+        function toggleChevron(e) {
+            $(e.target)
+                    .prev('.panel-heading')
+                    .find("i.indicator")
+                    .toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        }
+
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+
+        function toggleColor(e) {
+            $(e.target).siblings().toggleClass('current');
+        }
+
+        $('#accordion').on('shown.bs.collapse', toggleColor);
+        $('#accordion').on('hidden.bs.collapse', toggleColor);
+        $('.popover-dismiss').popover({
+            trigger: 'hover'
+        });
+        var $active = true;
+
+        $('.accordion').on('show', function (e) {
+            $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+        });
+
+        $('.accordion').on('hide', function (e) {
+            $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+        });
+    });
+</script>
+<script type="text/javascript">
+   $('.check_div_1 .custom_checkbox').click(function () {
+        $("#check_div_click_1").css("display", "block");
+    });
+    $("#check_div_click_1").click(function () {
+        $(".check_div_1 .custom_checkbox").removeClass('checked');
+        $("#check_div_click_1").css("display", "none");
+    });
+    $('.check_div_2 .custom_checkbox').click(function () {
+        $("#check_div_click_2").css("display", "block");
+    });
+    $("#check_div_click_2").click(function () {
+        $(".check_div_2 .custom_checkbox").removeClass('checked');
+        $("#check_div_click_2").css("display", "none");
+    });
+    $('.check_div_4 .custom_checkbox').click(function () {
+        $("#check_div_click_4").css("display", "block");
+    });
+    $("#check_div_click_4").click(function () {
+        $(".check_div_4 .custom_checkbox").removeClass('checked');
+        $("#check_div_click_4").css("display", "none");
+    });
+
+    $('.check_div_2 .custom_checkbox').click(function () {
+        $("#check_div_click_4").css("display", "block");
+    });
+
+    $("#check_div_click_2").click(function () {
+        $(".check_div_2 .custom_checkbox").removeClass('checked');
+        $("#check_div_click_2").css("display", "none");
+    });
+</script>
+<script type="text/javascript">
+    function openpopup(str) {
+        $('#abc').attr('src', 'flight_description.html?tab=' + str);
+    }
+    $('#sl1').slider({
+          formater: function(value) {
+            return value;//+'AM';
+          }
+        });
+    $("#sl1").on("slide", function(slideEvt) {
+	$("#sl1-value").text(slideEvt.value);
+});
+    
+    $('#sl2').slider({
+          formater: function(value) {
+            return value;//+'AM';
+          }
+        });
+    $("#sl2").on("slide", function(slideEvt) {
+	$("#sl2-value").text(slideEvt.value);
+});
+    
+</script>
+</body>
+</html>

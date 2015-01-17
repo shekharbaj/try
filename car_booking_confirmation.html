@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compitable" content="IE=edge">
+
+<title>GoFursan</title>
+<link rel="stylesheet" type="text/css" href="css/fur/bootstrap.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/flat-ui.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/fur/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/fur/theme.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/fur/bootstrap-social.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/fur/font-awesome.css" media="all"/>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="container-fluid border_bot bg_wht">
+<div class="container ">
+<div class="row mrgn-tp-bt10">
+<div class="col-lg-2 col-sm-3 col-xs-12 col-md-3">
+<a href="index.html" class="logo">
+<img class="img-responsive" src="images/fur/gofursan-logo.png">
+</a>
+</div>
+<div class="col-lg-10 col-sm-9 col-xs-12  col-md-9">
+<div class="row">
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="row">
+            <ul class="list-inline change_color">
+<li><a href="#" data-toggle="modal" data-target="#myModal">Register</a></li>
+<li><a href="#" data-toggle="modal" data-target="#myModal1">Sign In</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+
+            <!-- Register Modal HTML Here -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close close1" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h1 class="modal-title" id="myModalLabel">Register</h1>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <label for="exampleInputEmail1">Register Using Your Facebook Account</label>
+                        <a class="btn btn-block btn-social btn-facebook" onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);"> <i class="fa fa-facebook"></i> Register with Facebook</a> </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1"> or Register with your Email Id</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox" checked="">
+                            I am interested to receive Promotions and Special Offers.</label>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                            I have read, understood and accept the Privacy Policy and Terms and Conditions.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-4 "> <a href="manage_my_bookings.html" class="btn btn-block btn-primary">Register</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Sign In Modal HTML Here -->
+            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close close1" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h1 class="modal-title" id="myModalLabel">Sign In</h1>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-5 col-md-5 col-sm-5 "> <a class="btn btn-block btn-social btn-facebook" onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);"> <i class="fa fa-facebook"></i> Sign In with Facebook</a> </div>
+                      <div class="col-lg-7 col-md-7 col-sm-7 ">
+                        <label for="exampleInputEmail1"> <strong>OR</strong> Sign In using your Email ID</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-8 ">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your registered email id">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-8 ">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 pd-top25"> <a class="link" href="">I Forgot my Password</a> </div>
+                    </div>
+                    <div class="row pd-top10">
+                      <div class="col-lg-4 col-md-4 col-sm-4"> <a href="manage_my_bookings.html" class="btn btn-block btn-primary">Sign In</a> </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p>Sign in to manage your bookings and update your profiles.<br>
+                          if you don’t have an Account&nbsp; <a href="#" data-dismiss="modal" class="link_paragraph" data-toggle="modal" data-target="#myModal" target="_top">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+<div class="row">
+<div class="col-lg-12 pd_R">
+<div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                        class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand visible-xs" href="#">Menu</a></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav custom_float">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flight_search.html">Flights</a></li>
+                    <li><a href="hotel_search.html">Hotels</a></li>
+                    <li class="active"><a href="car_search.html">Cars</a></li>
+                   <li><a href="fh_search.html">Flight + Hotels</a></li>
+
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle " data-toggle="dropdown">More <span class="caret"></span></a>
+                     <ul class="dropdown-menu" role="menu">
+					<li><a href="sightseeing_search.html">Sightseeing</a></li>
+                    <li><a href="transfer_search.html">Transfers</a></li>
+                    <li><a href="cruises_search.html">Cruises</a></li>
+                    <li><a href="package_search.html">Packages</a></li>
+                    <li><a href="fc_search.html">Flights + Car</a></li>
+                    <li><a href="other_services.html">Other Services</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<div class="container pd-top20">
+
+
+
+<div class="white_bg border_div overflow_H ">
+                    <div class="highlight overflow_H">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <label><b>Booking Confirmation</b></label>
+                    </div>
+					</div>
+
+					<div class="padding_con10">
+					<p>Thank you for booking car with us. The details of your purchase are below. </p>
+
+
+
+<div class="row highlight mrgn-bottom10">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <label><b>Booking Details</b></label>
+                    </div>
+                    </div>
+
+
+<p>Your booking reference Number is: 8DEEBE, please use this reference for any queries you may have with us.<br>
+The Reference Number for your booking is 95D6EEF.</p>
+
+
+<div class="row highlight mrgn-bottom10">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <label><b>Passenger Details</b></label>
+                    </div>
+                    </div>
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Pax Type</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>Adult</label></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Title</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>Mr.</label></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>First Name</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>Test</label></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Middle Name</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>Test</label></div>
+</div>
+
+
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Last Name</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>Test </label></div>
+</div>
+
+</div>
+
+<div class="row highlight mrgn-bottom10">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <label><b>Payment Details</b></label>
+                    </div>
+                    </div>
+                    
+<div class="row mrgn-bottom10">
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Payment Method</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>Credit Card</label></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Currency</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>SAR</label></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Amount</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label> 281.75</label></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Authorization Code</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>8761284625236421 </label></div>
+</div>
+
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Track ID</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>750563251542 </label></div>
+</div>
+
+<div class="clearfix visible-xs"></div>
+<div class="col-lg-2 col-md-2 col-sm-2 ">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label><b>Payment Ref. No.</b></label></div>
+<div class="clearfix hidden-xs"></div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6"><label>91523265847856 </label></div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-3 hidden-xs">&nbsp;</div>
+
+
+
+<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 mrgn_bottom10_visible_xs">
+ <a class="btn btn-block btn-primary" href="#" data-toggle="modal" data-target="#myModal3">Email Voucher</a>
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 mrgn_bottom10_visible_xs">
+
+<!--<a href="#" data-toggle="modal" data-target="#bs-example-modal-lg">-->
+<a class="btn btn-block btn-primary" data-toggle="modal" data-target="#bs-example-modal-lg">Print Voucher</a>
+
+<div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      
+      <div class="modal-body"><button type="button" class="close close1" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+   <iframe class="iframe_width" src="car-voucher.html"></iframe>
+       
+  
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close1" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h1 class="modal-title" id="myModalLabel">Send Voucher Via Email</h1>
+      </div>
+      <div class="modal-body">
+    
+    
+     <p><b>Please Enter Email Address</b></p>
+     
+     
+    
+    <div class="row">    
+     <div class="col-lg-2 col-md-2 col-sm-2">
+    <label for="exampleInputEmail1">To</label>
+    </div>
+    
+     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+ <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Customer@company.com">
+     </div>
+    	</div>   
+    
+    <div class="row mrgn-top10">    
+     <div class="col-lg-2 col-md-2 col-sm-2">
+    <label for="exampleInputEmail1">CC</label>
+    </div>
+    
+     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+ <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+     </div>
+    	</div>   
+    
+    <div class="row mrgn-top10">    
+     <div class="col-lg-2 col-md-2 col-sm-2">
+    <label for="exampleInputEmail1">Subject</label>
+    </div>
+    
+     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+ <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Booking Refrence No. is">
+     </div>
+    	</div>   
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="row pd-top10">
+     <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+     &nbsp;
+     </div>
+     <div class="col-lg-3 col-md-3 col-sm-3 mrgn-bottom10">
+        <a href="#" class="btn btn-block btn-primary">Send Email</a>
+        </div>
+        
+     <div class="col-lg-3 col-md-3 col-sm-3 mrgn-bottom10">
+        <a data-dismiss="modal" href="#" class="btn btn-block btn-primary">Close</a>
+        </div>
+
+        
+        
+    </div>
+
+      
+  
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="row highlight_2 mrgn-bottom10 mrgn-top10">
+                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <label><b>Add Another Service</b></label>
+                    </div>
+                    </div>
+               </div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 mrgn-bottom10">
+&nbsp;
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn-bottom10">
+<div class="form-group">
+<a href="#" class="btn btn-block btn-primary">Hotels in Dubai</a>
+</div>
+
+                    
+                    
+                    
+                    
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn-bottom10">
+<div class="form-group">
+<a href="#" class="btn btn-block btn-primary">Flight in Dubai</a>
+
+</div>
+
+                    
+                    
+                    
+                    
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn-bottom10">
+<div class="form-group">
+<a href="#" class="btn btn-block btn-primary">Sightseeing in Dubai</a>
+</div>
+
+                    
+                    
+                    
+                    
+</div>
+
+
+</div>
+
+
+
+</div>
+
+<div class="footer">
+<div class="container-fluid">
+<div class="container my-container">
+<div class="row">
+<div class="col-lg-5 col-md-6 col-sm-12  col-xs-12 ">
+<ul class="footer_nav">
+<li><a href="#">Home</a></li>
+  <li><a href="#">About us </a></li>
+  <li><a href="#">Email	</a></li>
+  <li><a href="#">Contact Us</a></li>
+  <li><a href="#"> F.A.Q.	</a></li>
+  <li><a href="#">Terms of Service</a></li>
+    <li><a class="no" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+
+ <div class="clearfix visible-sm"></div>  
+
+ <div class="col-lg-5 col-md-4 col-sm-9 col-xs-12 ">
+<div class="col-lg-5 col-md-5 col-sm-3">
+<strong class="newsletter">Newsletter</strong>
+</div>
+
+
+<div class="col-lg-7 col-md-7 col-sm-9">
+
+<div class="form-group">
+ <input type="text" value="Enter your Email Address" class="form-control bdr" id="inputEmail" placeholder="Email">
+ </div>
+
+</div>
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+<div class="social_media_con">
+<ul class="list">
+<li><a href="#" class="zoomimg"><img src="images/fur/facebook.png"></a></li>
+<li><a href="#" class="zoomimg"><img src="images/fur/twitter.png"></a></li>
+<li><a href="#" class="zoomimg"><img src="images/fur/google.png"></a></li>
+<li><a href="#" class="zoomimg"><img src="images/fur/instagram.png"></a></li>
+<li><a href="#" class="zoomimg"><img src="images/fur/linkedin.png"></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="container  my-container">
+<div class="row">
+<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
+<div class="powered">Powered by: Travel Cloud Suite</div>
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 ">
+<div class="copy">GoFursan &copy; 2014. All Rights Reserved.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="javascript/fur/jquery-1.9.1.min.js"></script>
+<script src="javascript/fur/bootstrap.min.js"></script>
+<script src="javascript/fur/bootstrap-select1.js"></script>
+<script src="javascript/fur/flatui-checkbox.js"></script>
+<script src="javascript/fur/flatui-radio.js"></script>
+<script src="javascript/fur/application.js"></script>
+
+</body>
+</html>

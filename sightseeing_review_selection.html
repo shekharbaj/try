@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compitable" content="IE=edge">
+    <title>GoFursan</title>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/flat-ui.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/theme.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-select.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/vallenato.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-social.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/font-awesome.css" media="all"/>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="container-fluid border_bot bg_wht">
+<div class="container ">
+<div class="row mrgn-tp-bt10">
+<div class="col-lg-2 col-sm-3 col-xs-12 col-md-3">
+    <a href="index.html" class="logo">
+        <img class="img-responsive" src="images/fur/gofursan-logo.png">
+    </a>
+</div>
+<div class="col-lg-10 col-sm-9 col-xs-12  col-md-9">
+<div class="row">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+            <ul class="list-inline change_color">
+                <li><a href="#" data-toggle="modal" data-target="#myModal">Register</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal1">Sign In</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <!-- Register Modal HTML Here -->
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close close1" data-dismiss="modal"><span
+                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                            </button>
+                            <h1 class="modal-title" id="myModalLabel">Register</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                    <label for="exampleInputEmail1">Register Using Your Facebook
+                                        Account</label>
+                                    <a class="btn btn-block btn-social btn-facebook"
+                                       onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                        <i class="fa fa-facebook"></i> Register with Facebook</a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1"> or Register with your Email
+                                                Id</label>
+                                            <input type="email" class="form-control"
+                                                   id="exampleInputEmail1" placeholder="Enter email">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" checked="checked" value=""
+                                                   id="checkbox2" data-toggle="checkbox" checked="">
+                                            I am interested to receive Promotions and Special
+                                            Offers.</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" id="checkbox1"
+                                                   data-toggle="checkbox">
+                                            I have read, understood and accept the Privacy Policy and
+                                            Terms and Conditions.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 "><a
+                                        href="manage_my_bookings.html"
+                                        class="btn btn-block btn-primary">Register</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign In Modal HTML Here -->
+            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close close1" data-dismiss="modal"><span
+                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                            </button>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <h1 class="modal-title" id="myModalLabel">Sign In</h1>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-5"><a data-dismiss="modal"
+                                                                           class="btn btn-block btn-primary" href="">Continue
+                                    Without Sign In</a></div>
+
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-5 "><a
+                                        class="btn btn-block btn-social btn-facebook"
+                                        onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                    <i class="fa fa-facebook"></i> Sign In with Facebook</a></div>
+                                <div class="col-lg-7 col-md-7 col-sm-7 ">
+                                    <label for="exampleInputEmail1"> <strong>OR</strong> Sign In using
+                                        your Email ID</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email ID</label>
+                                            <input type="email" class="form-control"
+                                                   id="exampleInputEmail1"
+                                                   placeholder="Your registered email id">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <a class="link_forget" href=""> ( I Forgot my Password )</a>
+                                            <input type="password" class="form-control"
+                                                   id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="row pd-top10">
+                                <div class="col-lg-4 col-md-4 col-sm-4"><a data-dismiss="modal"
+                                                                           href="manage_my_bookings.html"
+                                                                           class="btn btn-block btn-primary">Sign In</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                    <p>If you don't have an account Register Now with Facebook or just an email
+                                        address</p>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 ">
+                                    <a href="#" data-dismiss="modal" class="btn btn-block btn-primary"
+                                       data-toggle="modal" data-target="#myModal" target="_top">Register Now</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+<div class="row">
+    <div class="col-lg-12 pd_R">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                        class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand visible-xs" href="#">Menu</a></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav custom_float">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flight_search.html">Flights</a></li>
+                    <li><a href="hotel_search.html">Hotels</a></li>
+                    <li><a href="car_search.html">Cars</a></li>
+                   <li><a href="fh_search.html">Flight + Hotels</a></li>
+
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle " data-toggle="dropdown">More <span class="caret"></span></a>
+                     <ul class="dropdown-menu" role="menu">
+					<li><a href="sightseeing_search.html">Sightseeing</a></li>
+                    <li><a href="transfer_search.html">Transfers</a></li>
+                    <li><a href="cruises_search.html">Cruises</a></li>
+                    <li><a href="package_search.html">Packages</a></li>
+                    <li><a href="fc_search.html">Flights + Car</a></li>
+                    <li><a href="other_services.html">Other Services</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row pd-top20">
+<div class="panel-group review-selection" id="accordion">
+<div class="panel panel-default">
+    <div class="panel-heading current">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Review Your Selection
+                <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+            </a>
+        </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <div class="row pd-bottom10">
+                <div class="col-lg-12 mrgn-bottom10 ">
+                    <h4 class="panel-title">Westminster Pier to Tower of London</h4>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                    <img class="img-responsive" src="images/fur/sightseeing_1.jpg">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+                    <div class="row_1 mrgn-bottom10">
+                        <div class="col-lg-12 col-md-12 col-sm-12 "><h4 class="panel-title">Sightseeing Summary</h4>
+                        </div>
+                    </div>
+
+                    <div class="row_1">
+                        <div class="col-lg-12 col-md-12 col-sm-12 mrgn-bottom10">
+                            <p class="mrgn-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nunc.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius nunc.Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. Ut varius nunc. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Ut varius nunc.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="row_1 highlight special_col_left_xs">
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <label><b>Tour Date</b></label>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <label><b>City</b></label>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <label><b>Preferred Language</b></label>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <label><b>No. of Passenger(s)</b></label>
+                        </div>
+                    </div>
+                    <div class="row_1 special_col_right_xs">
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <label>12 Feb 2014</label>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <label>London - United Kingdom</label>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <label>English</label>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <label>1 Adult 0 Child</label>
+                        </div>
+                    </div>
+                    <div class="row_1 highlight ">
+                        <div class="col-lg-6 col-md-6 col-sm-6 xs_float_R">
+                            <label><b>Total : SAR 359</b>&nbsp;&nbsp; Inclusive All Taxes</label>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="loyalty_point">
+                                <p>goRewards 100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row_1 mrgn-top20">
+                    <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                        &nbsp;
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="row_1">
+                            <div id="accordion-container">
+                                <h3 class="accordion-header accordion-header-1">Enter Coupon Code</h3>
+
+                                <div class="accordion-content" style="display:none">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="COUPON35"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <a class="btn btn-block btn-primary" href="#">Apply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row_1">
+                            <div id="accordion-container1">
+                                <h3 class="accordion-header accordion-header-1">Redeem My goRewards Points</h3>
+
+                                <div class="accordion-content" style="display:none">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="105"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <a class="btn btn-block btn-primary" href="#">Redeem</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label>Redeemable Rewards (Min: 105 , Max: 300 Points)</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 pull-right">
+                        <div class="highlight col-lg-12" style="padding:10px;">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12"><p>Total</p></div>
+                                <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right">SAR 359</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12"><p>Coupon Applied</p></div>
+                                <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right">-SAR 35</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12"><p>goRewards Redeemed (105)</p></div>
+                                <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right">-SAR 30</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-12"><p><b>Grand Total</b></p></div>
+                                <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right"><b>SAR 329</b></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pull-right padding_con_0">
+                <a class="btn btn-block btn-primary pull-right"
+                   href="#collapseTwo" data-parent="#accordion" data-toggle="collapse">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading disabled-accordion">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Passenger Information
+                <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+            </a>
+        </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row pd-bottom10">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+                    <div class="form-group">
+                        <select title="herolist" value="+91- India" class="select-block">
+                            <option>India - +91</option>
+                            <option>Pakistan - +92</option>
+                            <option>India - +91</option>
+                            <option>Pakistan - +92</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="mobile: e.g. 50 -1234567">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Email ID">
+                    </div>
+                </div>
+            </div>
+            <div class="row highlight mrgn-bottom10">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <label><b>Adult 1 </b></label>
+                </div>
+            </div>
+
+            <div class="row pd-bottom10 optional_class">
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                    <div class="form-group"><sup>*</sup>
+                        <select title="herolist" value="Prefix" class="select-block">
+                            <option>Prefix</option>
+                            <option>Mr.</option>
+                            <option>Mrs.</option>
+                            <option>Miss</option>
+                            <option>Ms.</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                    <div class="form-group">
+                        <sup>*</sup><input type="text" class="form-control" id="" placeholder="First Name">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                    <div class="form-group"><sup>&nbsp;</sup>
+                        <input type="text" class="form-control" id="" placeholder="Middle Name">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+                    <div class="form-group"><sup>*</sup>
+                        <input type="text" class="form-control" id="" placeholder="Last Name">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pull-right padding_con_0">
+                <a class="btn btn-block btn-primary pull-right" href="#collapseThree" data-parent="#accordion"
+                   data-toggle="collapse">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading disabled-accordion">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Purchase
+                <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+            </a>
+        </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row  mrgn_auto mrgn-bottom10">
+                <!--<div class="col-lg-12 col-md-12 col-sm-12 highlight ">
+                    <label><b>Hotel Cancellation Conditions</b></label>
+                </div>-->
+                <div class="">
+                    <!--<p class="mrgn-top10">
+                        Please note that this item has special booking conditions which are applicable to any reductions
+                        or
+                        cancellations made within the deadlines, prior to start date, listed below:
+                    </p>-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="table-responsive">
+                                <table class="table ">
+                                    <thead>
+                                    <tr class="highlight ">
+                                        <th>Cancellation Charges</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td> If you cancel booking between 16 Nov 2014 00 : 00 : 00 AM to 19 Nov 2014 00
+                                            : 00 : 00 AM then Cancellation Charges will be SAR 276.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>If you cancel booking between 12 Nov 2014 00 : 00 : 00 AM to 15 Nov 2014 00
+                                            : 00 : 00 AM then Cancellation Charges will be SAR 276.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>Note:- In case of multiple cancellation policy with same date
+                                            range if client cancel boking then highest price will be charged.<br>
+                                            * Date and time is calculated based on the locel time of destination.</p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pd-bottom10">
+                <div class="col-lg-12">
+                    <div class="checkbox custom_checkbox cancellation_policy">
+                        <label>
+                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                            I have read and accept the Cancellation Policy and the
+                        </label>
+                        <a class="link_Cancellation" href="#" data-toggle="modal" data-target="#bs-example-modal-lg">Booking
+                            Terms and Conditions</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog"
+                     aria-labelledby="myLargeModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close close1" data-dismiss="modal"><span
+                                        aria-hidden="true">&times;</span><span
+                                        class="sr-only">Close</span></button>
+                                <iframe class="iframe_width" src="cancellation.html"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pull-right padding_con_0">
+                <a href="sightseeing_booking_confirmation.html"
+                   class="btn btn-block pull-right btn-primary">Purchase</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+    <div class="container-fluid">
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12  col-xs-12 ">
+                    <ul class="footer_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">Email </a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"> F.A.Q. </a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a class="no" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-lg-5 col-md-4 col-sm-9 col-xs-12 ">
+                    <div class="col-lg-5 col-md-5 col-sm-3">
+                        <strong class="newsletter">Newsletter</strong>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-9">
+                        <div class="form-group">
+                            <input type="text" value="Enter your Email Address" class="form-control bdr" id="inputEmail"
+                                   placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                    <div class="social_media_con">
+                        <ul class="list">
+                            <li><a href="#" class="zoomimg"><img src="images/fur/facebook.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/twitter.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/google.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/instagram.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/linkedin.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container  my-container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
+                    <div class="powered">Powered by: Travel Cloud Suite</div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 ">
+                    <div class="copy">
+                        GoFursan &copy; 2014. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="javascript/fur/jquery-1.9.1.min.js"></script>
+<script src="javascript/fur/bootstrap.min.js"></script>
+<script src="javascript/fur/bootstrap-select1.js"></script>
+<script src="javascript/fur/flatui-checkbox.js"></script>
+<script src="javascript/fur/flatui-radio.js"></script>
+<script src="javascript/fur/application.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".check_div").hide();
+        $(".check_SH").removeClass('checked');
+        $('.check_SH').click(function () {
+            if ($(".check_SH").hasClass("checked")) {
+                $(".check_div").hide();
+            }
+            else {
+                $(".check_div").show();
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+            $("select[title='herolist']").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
+        });
+        $('#myModal1').modal('show');
+        function toggleChevron(e) {
+            $(e.target)
+                    .prev('.panel-heading')
+                    .find("i.indicator")
+                    .toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        }
+
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+        function toggleColor(e) {
+            $(e.target).siblings().toggleClass('current');
+            $(e.target).siblings().removeClass('disabled-accordion');
+        }
+
+        $('#accordion').on('shown.bs.collapse', toggleColor);
+        $('#accordion').on('hidden.bs.collapse', toggleColor);
+        $('.popover-dismiss').popover({
+            trigger: 'hover'
+        });
+        var $active = true;
+        $('.panel-title > a').click(function (e) {
+            e.preventDefault();
+        });
+        if (!$active) {
+            $active = true;
+            $('.panel-title > a').attr('data-toggle', 'collapse');
+            $('.panel-collapse').collapse({'toggle': true, 'parent': '#accordion'});
+
+        } else {
+            $active = false;
+            $('.panel-title > a').removeAttr('data-toggle');
+        }
+        $('.pull-right').click(function () {
+            $(this).parent().parent().siblings().children().children().attr('data-toggle', 'collapse');
+        });
+
+        //$('#myModal').modal(remote);
+
+        /* coupon code accordion js */
+        $('.accordion-header').toggleClass('active-header');
+        var contentwidth = $('.accordion-header').width();
+        $('.accordion-content').css({'width': contentwidth });
+        $('.accordion-content').slideDown().toggleClass('open-content');
+        $('.accordion-header').click(function () {
+            if ($(this).is('.inactive-header')) {
+                $(this).toggleClass('active-header').toggleClass('inactive-header');
+                $(this).next().slideToggle().toggleClass('open-content');
+            }
+            else {
+                $(this).toggleClass('active-header').toggleClass('inactive-header');
+                $(this).next().slideToggle().toggleClass('open-content');
+            }
+        });
+        $('.accordion-content').css({'display': 'none' });
+    });
+
+    /* coupon code accordion end here  */
+
+
+</script>
+</body>
+</html>

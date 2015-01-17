@@ -1,0 +1,3375 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compitable" content="IE=edge">
+
+    <title>GoFursan</title>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/flat-ui.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/theme.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/fur/vallenato.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-social.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/datepicker.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/font-awesome.css" media="all"/>
+
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="container-fluid border_bot bg_wht">
+<div class="container ">
+<div class="row mrgn-tp-bt10">
+<div class="col-lg-2 col-sm-3 col-xs-12 col-md-3">
+    <a href="index.html" class="logo">
+        <img class="img-responsive" src="images/fur/gofursan-logo.png">
+    </a>
+</div>
+<div class="col-lg-10 col-sm-9 col-xs-12  col-md-9">
+<div class="row">
+            <ul class="list-inline change_color">
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Register</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal1">Sign In</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+
+    <!-- Register Modal HTML Here -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close1" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h1 class="modal-title" id="myModalLabel">Register</h1>
+                </div>
+
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="exampleInputEmail1">Register Using Your Facebook Account</label>
+                            <a class="btn btn-block btn-social btn-facebook"
+                               onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                <i class="fa fa-facebook"></i> Register with Facebook</a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"> or Register with your Email Id</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           placeholder="Enter email">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+
+                        <div class="col-lg-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked="checked" value="" id="checkbox2"
+                                           data-toggle="checkbox" checked="">
+                                    I am interested to receive Promotions and Special Offers
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                    I have read, understood and accept the Privacy Policy and Terms and Conditions
+                                </label>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="manage_my_bookings.html" class="btn btn-block btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Sign In Modal HTML Here -->
+            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close close1" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h1 class="modal-title" id="myModalLabel">Sign In</h1>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-5 col-md-5 col-sm-5 "> <a class="btn btn-block btn-social btn-facebook" onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);"> <i class="fa fa-facebook"></i> Sign In with Facebook</a> </div>
+                      <div class="col-lg-7 col-md-7 col-sm-7 ">
+                        <label for="exampleInputEmail1"> <strong>OR</strong> Sign In using your Email ID</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-8 ">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your registered email id">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-8 ">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 pd-top25"> <a class="link" href="">I Forgot my Password</a> </div>
+                    </div>
+                    <div class="row pd-top10">
+                      <div class="col-lg-4 col-md-4 col-sm-4"> <a href="manage_my_bookings.html" class="btn btn-block btn-primary">Sign In</a> </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p>Sign in to manage your bookings and update your profiles.<br>
+                          if you don’t have an Account&nbsp; <a href="#" data-dismiss="modal" class="link_paragraph" data-toggle="modal" data-target="#myModal" target="_top">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+</div>
+<div class="row">
+    <div class="col-lg-12 pd_R">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                        class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand visible-xs" href="#">Menu</a></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav custom_float">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flight_search.html">Flights</a></li>
+                    <li><a href="hotel_search.html">Hotels</a></li>
+                    <li><a href="car_search.html">Cars</a></li>
+                   <li><a href="fh_search.html">Flight + Hotels</a></li>
+
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle " data-toggle="dropdown">More <span class="caret"></span></a>
+                     <ul class="dropdown-menu" role="menu">
+					<li><a href="sightseeing_search.html">Sightseeing</a></li>
+                    <li><a href="transfer_search.html">Transfers</a></li>
+                    <li><a href="cruises_search.html">Cruises</a></li>
+                    <li><a href="package_search.html">Packages</a></li>
+                    <li><a href="fc_search.html">Flights + Car</a></li>
+                    <li><a href="other_services.html">Other Services</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<div class="container">
+
+
+<div class="row_1 mrgn-tp-bt10">
+
+<div class="row_1">
+<h2 class="fh_h2">Flight + Car From SAR 860</h2>
+</div>
+
+<div class="row_1 mrgn-bottom10">
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-10"> 
+<div class="your_search">
+<div class="col-lg-2 col-md-2 col-sm-2"><label>Your Search </label></div>
+<div class="col-lg-10 col-md-10 col-sm-10"><label>Delhi to Dubai on the 20 - Jun returning on the 25-Jun 1 Adult</label></div>
+</div>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2"><a class="btn btn-block btn-primary" id="modify">Modify Your Search</a></div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="col-lg-5 col-md-6 col-sm-8 pull-right collapse" id="modify_con">
+<div class="transparent_con my-container">
+
+
+<div class="transfer_search_con">
+
+
+<div class="row_1 mrgn-bottom10 mrgn-top20 ">
+    <div class="col-lg-3">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>From</label>
+        </div>
+    </div>
+    <div class="col-lg-9">
+        <div class="form-group">
+            <input type="email" class="form-control map_icon" id="" placeholder="City or Airport"/>
+        </div>
+    </div>
+</div>
+<div class="row_1">
+    <div class="col-lg-3">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>To</label>
+        </div>
+    </div>
+    <div class="col-lg-9">
+        <div class="form-group">
+            <input type="email" class="form-control map_icon" id="" placeholder="City or Airport"/>
+        </div>
+    </div>
+</div>
+
+<div class="row_1">
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Departure Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker1">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Time</label>
+            <select title="herolist" value="Any Time" class="select-block">
+                <option selected="selected">Any Time</option>
+                <option>08 - 12</option>
+                <option>12 - 18</option>
+                <option>18 - 22</option>
+                <option>22 - 02</option>
+                <option>02 - 08</option>
+            </select>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row_1">
+    
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Return Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker2">
+    </div>
+    
+    
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Time</label>
+            <select title="herolist" value="Any Time" class="select-block">
+                <option selected="selected">Any Time</option>
+                <option>08 - 12</option>
+                <option>12 - 18</option>
+                <option>18 - 22</option>
+                <option>22 - 02</option>
+                <option>02 - 08</option>
+            </select>
+        </div>
+    </div>
+    
+    
+
+
+</div>
+
+
+
+
+
+
+<div class="row_1">
+
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+<label for="inputEmail" class="wht">&nbsp;</label>
+</div>
+
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Adult(s)</label>
+            <select title="herolist" value="1" class="select-block">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="allow3">
+            (12 + Years)
+
+        </div>
+    </div>
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Children</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="allow3">
+            (2 - 11 Years)
+
+        </div>
+    </div>
+
+<div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Infants</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="allow3">
+            (Under 2 Years)
+
+        </div>
+    </div>
+
+</div>
+
+<!--<div class="row_1">
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox ">
+                <label class="wht">
+                    <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox">
+                    Direct Flights Only
+                </label>
+
+            </div>
+        </div>
+
+    </div>
+
+
+<div class="row_1">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox check_SH">
+            <label class="wht">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                My Car Requirements Are Different From My Flights
+            </label>
+
+        </div>
+    </div>
+
+</div>
+<div class="check_div">
+  
+  <div class="row_1 mrgn-top10">
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Pickup City</label>
+            <input class="form-control" type="text" placeholder="Dubai,United arab emirates">
+        </div>
+    </div>
+</div>
+<div class="row_1">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Pickup From</label>
+            <select title="herolist" value="Accomodation" class="select-block">
+                <option value="Select" selected="selected">Airport</option>
+                <option value="City">City</option>
+                <option value="Rail">Rail</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+<div class="row_1">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Pickup Location</label>
+            <select title="herolist" value="Accomodation" class="select-block">
+                <option value="Select" selected="selected">MAKHTOUM INT’L AIRPORT</option>
+                <option value="">MAKHTOUM INT’L AIRPORT</option>
+                <option value="">SHARJAH AIRPORT</option>
+                <option value="">DUBAI INTERNATIONAL AIRPORT</option>
+                <option value="">DUBAI INTL AIRPORT TERMINAL 3</option>
+            </select>
+
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row_1">
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Pickup Date and Time</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker3">
+    </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-6 ">
+     <div class="row_1">
+      <label for="inputEmail" class="wht"><sup>*</sup>Time Based on Flights</label>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+               <select title="herolist" value="Hrs." class="select-block">
+                <option selected="selected">Hrs.</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+                 <select title="herolist" value="Min" class="select-block">
+                <option selected="selected">Min</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+            </select>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
+
+<div class="row_1">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox check_SH2">
+            <label class="wht">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Different Drop Off Location
+            </label>
+
+        </div>
+    </div>
+
+</div>
+<div class="check_div2">
+
+    <div class="row_1">
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="form-group">
+                <label for="inputEmail" class="wht"><sup>*</sup>Drop Off City</label>
+                <input class="form-control" type="text" placeholder="Please Enter Your Destination">
+            </div>
+        </div>
+    </div>
+    <div class="row_1">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="form-group">
+                <label for="inputEmail" class="wht"><sup>*</sup>Drop Off at</label>
+                <select title="herolist" value="Accomodation" class="select-block">
+                    <option value="Select" selected="selected">Select</option>
+                    <option value="Airport">Airport</option>
+                    <option value="City">City</option>
+                    <option value="Rail">Rail</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <div class="row_1">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="form-group">
+                <label for="inputEmail" class="wht"><sup>*</sup>Drop Off Location</label>
+                <select title="herolist" value="Accomodation" class="select-block">
+                    <option value="Select" selected="selected">Select</option>
+                </select>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="row_1">
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Dropoff Date and Time</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker4">
+    </div>
+
+     <div class="col-lg-6 col-md-6 col-sm-6 ">
+     <div class="row_1">
+      <label for="inputEmail" class="wht"><sup>*</sup>Time Based on Flights</label>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+               <select title="herolist" value="Hrs." class="select-block">
+                <option selected="selected">Hrs.</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+                 <select title="herolist" value="Min" class="select-block">
+                <option selected="selected">Min</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+            </select>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
+
+<div class="row_1">
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Driver Age (Years)</label>
+        <input class="form-control" type="text" placeholder="Age">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 pop">
+
+        <section for="inputEmail" class="wht">&nbsp;</section>
+        <label class="wht">Aged between 25-70</label>
+        <a class="text-blk" data-toggle="popover"
+           data-content="Additional fees may apply for drivers aged under 25 at the time of rental, please see the Terms and Conditions for further details."><i
+                class="fa fa-info-circle"></i></a>
+
+
+    </div>
+
+
+</div>
+
+    
+</div>
+-->
+
+
+
+
+<div class="row_1 mrgn-top10">
+
+    <div class="col-lg-6 col-md-6 col-sm-6 pull-right mrgn-bottom20 ">
+        <a href="fc_waiting.html" class="btn btn-block btn-primary">Search Flight + Car</a>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row_1">
+<h2 class="fh_rc">Recommended Combination</h2>
+</div>
+
+
+<div class="fh_con_outer">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 border_right">
+<div class="row mrgn-bottom10">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+        
+
+        <img class="img-responsive" src="images/fur/transfer_thumb_2.jpg">
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-8 no-left-padding">
+    <div class="pop">
+        <h3>MAZDA 2 1.5 AC or<a class="similar" href="#" data-toggle="popover"
+                                data-content="The image, make and model of the displayed vehicle is an example of that particular car group type. The vehicle you receive will be similar in size and performance to the one displayed but the actual make and model will depend on the availability at the time of pick-up.">Similar</a>
+        </h3>
+        </div>
+
+        <ul class="list_inline_upper_icon">
+            <li><span>Class: Mini </span></li>
+            <li><span class="full_to_full">Full to Full</span></li>
+        </ul>
+
+        <strong class="free">We give you the following for FREE:</strong>
+
+
+        <div class="row pop">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Cancellation is free of charge although No Show is chargeable (arround 50€)"><i
+                            class="fa fa-check-circle"></i>Cancellation</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Amendment Policy: Free of charge"><i
+                            class="fa fa-check-circle"></i>Amendment</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Theft Waiver (Thw)"><i
+                            class="fa fa-check-circle"></i>Theft Waiver </a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Collision Damage Waiver (Cdw)"><i class="fa fa-check-circle"></i>Collision
+                        Damage Waiver </a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row pop">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar passenger_icon" href="#" data-toggle="popover"
+                           data-content="This car has 4 seats">X 4</a></li>
+                    <li><a class="similar car_door_icon" href="#" data-toggle="popover"
+                           data-content="This car has 3 doors">X 3</a></li>
+                           
+                           
+                           
+                     <li><a class="similar car_luggage_icon" href="#" data-toggle="popover"
+                           data-content="This car has 2 Maximum Baggage">X 2</a></li>
+
+                           
+                    <li><a class="similar ac_icon" href="#" data-toggle="popover"
+                           data-content="This car has air conditioning">Yes</a></li>
+                    <li><a class="similar automatic_icon" href="#" data-toggle="popover"
+                           data-content="This car has Manual Transmission">Manual Drive</a></li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="row mrgn-top10">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <strong class="free"><a href="#" data-toggle="modal" data-target="#tt">Terms and
+                    Conditions</a></strong>
+            </div>
+
+
+        </div>
+        
+        <div class="modal fade" id="tt" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close close1" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span
+                            class="sr-only">Close</span></button>
+                    <iframe class="iframe_width" src="term.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        
+        
+    </div>
+
+    
+<div class="row_1 mrgn-top10">
+<div class="col-lg-12">
+<div class="check_in_div_1">
+<span><b>Car Pick-Up:</b> Heathrow Airport, 20 Jun 2014 at 10:30<br>
+ <b>Car Drop-Off:</b> Marble Arch, 20 Jun 2014 at 14:30</span>
+</div>
+</div>
+</div>
+
+<div class="row_1">
+      <div class="col-lg-3 col-md-3 col-sm-5 padding_con_0 pull-right mrgn-top10 mrgn-right15">
+<a class="btn btn-block btn-primary" id="btnCC">Change Car</a>
+</div>
+        </div>
+    
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="col-lg-5 col-md-5 col-sm-5 border_right">
+
+
+<div class="row min_height185">
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="">
+                <img class="" src="images/fur/f1.jpg">
+            </div>
+            <div class="airline_name">
+                Air India
+            </div>
+        </div>
+
+
+        <div class="col-lg-5 col-md-5 col-sm-5 border_right">
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>
+                    11:30 - 01:35
+                        <br>
+                        Flying Time 2 h 05m, 1 Stop</p>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-4">
+         <div class="description_flight">
+            <p>Economy</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mrgn-top10">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="">
+                <img class="" src="images/fur/f1.jpg">
+            </div>
+            <div class="airline_name">
+                Air India
+            </div>
+        </div>
+
+
+        <div class="col-lg-5 col-md-5 col-sm-5 border_right">
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>
+   					 3:30 - 05:35
+                        <br>
+                        Flying Time 2 h 05m, 1 Stop</p>                
+                        </div>
+
+            </div>
+        </div>
+        
+        
+        <div class="col-lg-4 col-md-4 col-sm-4">
+         <div class="description_flight">
+            <p>Economy</p>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+</div>
+
+
+</div>
+<div class="clearfix"></div>
+
+<div class="modal fade" id="flight_popup" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <button type="button" class="close close1" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <iframe class="iframe_width" id="abc" src="fh_description.html"></iframe>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row_1 mrgn-top10">
+<div class="check_in_div_1">
+<span><b>Flight Departure:</b> Marble Arch, 25 Jun 2014 at 14:30<br>
+<b>Flight Arrival:</b> Heathrow Airport, 20 Jun 2014 at 10:30
+
+</span>
+</div>
+</div>
+
+<div class="row mrgn-top10">
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="row">
+    
+    
+    
+
+<div class="col-lg-4 col-md-4 col-sm-4 padding_con_0 mrgn-top10">
+            <ul class="list-inline flight_ul">
+                <li><a href="#" onClick="javascript:openpopup('FD');" data-toggle="modal"
+                       data-target="#flight_popup">Flight Details</a></li>
+                   </ul>
+                   </div>
+    
+    
+
+<div class="col-lg-3 col-md-3 col-sm-3 padding_con_0 pull-right mrgn-right15 mrgn-top10">
+		<a class="btn btn-block btn-primary" id="btnCF">Change Flight</a>
+        </div>                   
+                   
+        </div>
+
+    </div>
+</div>
+
+
+
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+    <h2 class="maroon text-center">SAR 860</h2>
+    <a href="fc_review_selection.html" class="btn btn-block btn-primary">Book</a>
+</div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="row mrgn-tp-bt20 mrgn_ryt_0 all_hide" style="display:none;"">
+<div class="col-lg-12 col-md-12 col-sm-12 ">
+
+<div class="row mrgn_lft_0">
+<ul class="nav nav-tabs change_tab tab_width border_5" role="tablist">
+    <li class="active"><a href="#change_car" role="tab" data-toggle="tab">Change Car</a></li>
+    <li><a href="#change_flight" role="tab" data-toggle="tab">Change Flight</a></li>
+</ul>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content tab-content-no-bg">
+<div class="tab-pane active" id="change_car">
+
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-4 ">
+<div class="panel-group" id="accordion">
+
+<div class="panel panel-default">
+<div class="panel-heading">
+
+    <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            Modify Your Search
+            <i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i>
+        </a>
+    </h4>
+
+</div>
+<div id="collapseOne" class="panel-collapse collapse">
+
+<div class="panel-body">
+<div class="my-container2">
+<div class="row ">
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Pickup City</label>
+            <input class="form-control" type="text" placeholder="Dubai,United arab emirates">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Pickup From</label>
+            <select title="herolist" value="Accomodation" class="select-block">
+                <option value="Select" selected="selected">Airport - Makhtoum Int’l Airport</option>
+                <option value="City">City - Dubai Al Quoz</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox check_SH span_title">
+            <label class="wht">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Different Drop Off Location
+            </label>
+
+        </div>
+    </div>
+
+</div>
+<div class="check_div" style="display:none">
+
+    <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="form-group">
+                <label for="inputEmail" class="wht"><sup>*</sup>Drop Off City</label>
+                <input class="form-control" type="text" placeholder="Please Enter Your Destination">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="form-group">
+                <label for="inputEmail" class="wht"><sup>*</sup>Drop Off at</label>
+            <select title="herolist" value="Accomodation" class="select-block">
+                <option value="Select" selected="selected">Airport - Makhtoum Int’l Airport</option>
+                <option value="City">City - Dubai Al Quoz</option>
+            </select>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Pickup Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker3">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Pickup Time</label>
+            <select title="herolist" value="Hrs." class="select-block">
+                <option selected="selected">Hrs.</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">&nbsp;</label>
+
+            <select title="herolist" value="Min" class="select-block">
+                <option selected="selected">Min</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+            </select>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Drop Off Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker4">
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Drop Off Time</label>
+            <select title="herolist" value="Hrs." class="select-block">
+                <option selected="selected">Hrs.</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">&nbsp;</label>
+
+            <select title="herolist" value="Min" class="select-block">
+                <option selected="selected">Min</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+            </select>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <label for="inputEmail" class="wht"><sup>*</sup>Driver Age (Years)</label>
+        <input class="form-control" type="text" placeholder="Age">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 pop">
+        <label class="wht">Aged between 19-70</label>
+        <a class="text-blk" data-toggle="popover"
+           data-content="Additional fees may apply for drivers aged under 25 at the time of rental, please see the Terms and Conditions for further details."><i
+                class="fa fa-info-circle"></i></a>
+
+
+    </div>
+
+</div>
+
+
+<div class="row mrgn-bottom20">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Currency</label>
+            <select title="herolist" value="SAR" class="select-block">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="SAR" selected="selected">SAR</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 pull-right ">
+        <a href="car_waiting.html" class="btn btn-block btn-primary">Search</a>
+    </div>
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="panel panel-default">
+<div class="panel-heading normal">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            Filter Result
+            <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+        </a>
+    </h4>
+</div>
+
+
+<div id="collapseTwo" class="panel-collapse collapse in">
+
+    <div class="panel-body">
+        <div class="my-container2">
+
+            <div class="row_1">
+                <div id="accordion-container">
+                    <div class="link_clear_outer_div">
+                        <a class="link_clear pull-right" id="check_div_click_1" href="javascript:void(0)">Clear
+                            Filter</a>
+                    </div>
+                    <h2 class="accordion-header">No of Doors </h2>
+
+                    <div class="accordion-content">
+
+                        <div class="check_div_1">
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        4 <span class="gray_text">(7)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        5 <span class="gray_text">(76)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        N/A <span class="gray_text">(112)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="link_clear_outer_div">
+                        <a class="link_clear pull-right" id="check_div_click_2" href="javascript:void(0)">Clear
+                            Filter</a>
+                    </div>
+                    <h2 class="accordion-header">Car Type</h2>
+
+                    <div class="accordion-content">
+
+                        <div class="check_div_2">
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        Compact<span class="gray_text">(7)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        Fullsize<span class="gray_text">(76)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        Intermediate<span class="gray_text">(112)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        Luxury <span class="gray_text">(39)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        Premium<span class="gray_text">(76)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        Special<span class="gray_text">(112)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        Standard <span class="gray_text">(39)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="link_clear_outer_div">
+                        <a class="link_clear pull-right" id="check_div_click_3" href="javascript:void(0)">Clear
+                            Filter</a>
+                    </div>
+                    <h2 class="accordion-header">Transmission</h2>
+
+                    <div class="accordion-content">
+
+                        <div class="check_div_3">
+
+
+                            <div class="col-lg-12">
+                                <div class="checkbox custom_checkbox span_title">
+                                    <label>
+                                        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                        Auto Unspecified Drive <span class="gray_text">(39)</span>
+                                    </label>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 ">
+<div class="row">
+
+
+    <div class="col-lg-4 col-md-5 col-sm-4">
+        <div class="big_name_transfer">
+            <h2>London, United Kingdom</h2>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-5">
+        <div class="description_transfer">
+            <p>Wed, 12 Feb. 2014 - Fri, 14 Feb. 2014</p>
+
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-3 col-sm-3">
+        <div class="big_name_transfer_1">
+            <h2>11 results</h2>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-lg-12 padding_con0">
+
+
+<div class="row">
+
+
+<div class="white_content_area">
+
+<div class="row mrgn-bottom10">
+
+
+    <div class="col-lg-12">
+        <ul id="list-inline" class="list-inline list_inline_9">
+            <li><b>Sort By</b></li>
+            <li class="active"><a href="#">Price</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<div class="row mrgn-bottom10">
+    <div class="col-lg-3 col-md-3 col-sm-3">
+        
+
+        <img class="img-responsive" src="images/fur/transfer_thumb_2.jpg">
+    </div>
+
+    <div class="col-lg-7 col-md-6 col-sm-5 no-left-padding pop">
+        <h3>MAZDA 2 1.5 AC or<a class="similar" href="#" data-toggle="popover"
+                                data-content="The image, make and model of the displayed vehicle is an example of that particular car group type. The vehicle you receive will be similar in size and performance to the one displayed but the actual make and model will depend on the availability at the time of pick-up.">Similar</a>
+        </h3>
+
+        <ul class="list_inline_upper_icon">
+            <li><span>Class: Mini </span></li>
+            <li><span class="full_to_full">Full to Full</span></li>
+        </ul>
+
+        <strong class="free">We give you the following for FREE:</strong>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Cancellation is free of charge although No Show is chargeable (arround 50€)"><i
+                            class="fa fa-check-circle"></i>Cancellation</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Amendment Policy: Free of charge"><i
+                            class="fa fa-check-circle"></i>Amendment</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Theft Waiver (Thw)"><i
+                            class="fa fa-check-circle"></i>Theft Waiver </a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Collision Damage Waiver (Cdw)"><i class="fa fa-check-circle"></i>Collision
+                        Damage Waiver </a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar passenger_icon" href="#" data-toggle="popover"
+                           data-content="This car has 4 seats">X 4</a></li>
+                    <li><a class="similar car_door_icon" href="#" data-toggle="popover"
+                           data-content="This car has 3 doors">X 3</a></li>
+                           
+                                                       <li><a class="similar car_luggage_icon" href="#" data-toggle="popover"
+                           data-content="This car has 2 Maximum Baggage">X 2</a></li>
+
+                           
+                    <li><a class="similar ac_icon" href="#" data-toggle="popover"
+                           data-content="This car has air conditioning">Yes</a></li>
+                    <li><a class="similar automatic_icon" href="#" data-toggle="popover"
+                           data-content="This car has Manual Unspecified Drive Transmission">Manual Unspecified
+                        Drive</a></li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <strong class="free"><a href="#" data-toggle="modal" data-target="#terms">Terms and
+                    Conditions</a></strong>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="terms" tabindex="-1" role="dialog"
+         aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close close1" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span
+                            class="sr-only">Close</span></button>
+                    <iframe class="iframe_width" src="term.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-sm-4">
+        <div class="transfer_price">
+            <h2 class="maroon">SAR 377.39</h2>
+        </div>
+
+        <a class="btn btn-block btn-primary close_HF" href="#">Select</a>
+
+        <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+            <a data-toggle="popover" data-content="Know More">
+                <img src="images/fur/Diamond.png" width="26" height="16">
+
+                <p>goRewards 100</p>
+            </a>
+
+        </div>
+        <div class="modal fade" id="rewards" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close1" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span
+                                class="sr-only">Close</span></button>
+                        <iframe class="iframe_width" src="rewards.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-bottom10">
+    <div class="col-lg-3 col-md-3 col-sm-3">
+    <img class="img-responsive" src="images/fur/transfer_thumb_2.jpg">
+    </div>
+
+    <div class="col-lg-7 col-md-6 col-sm-5 no-left-padding pop">
+        <h3>MAZDA 2 1.5 AC or<a class="similar" href="#" data-toggle="popover"
+                                data-content="The image, make and model of the displayed vehicle is an example of that particular car group type. The vehicle you receive will be similar in size and performance to the one displayed but the actual make and model will depend on the availability at the time of pick-up.">Similar</a>
+        </h3>
+
+        <ul class="list_inline_upper_icon">
+            <li><span>Class: Mini </span></li>
+            <li><span class="full_to_full">Full to Full</span></li>
+        </ul>
+
+        <strong class="free">We give you the following for FREE:</strong>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Cancellation is free of charge although No Show is chargeable (arround 50€)"><i
+                            class="fa fa-check-circle"></i>Cancellation</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Amendment Policy: Free of charge"><i
+                            class="fa fa-check-circle"></i>Amendment</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Theft Waiver (Thw)"><i
+                            class="fa fa-check-circle"></i>Theft Waiver </a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Collision Damage Waiver (Cdw)"><i class="fa fa-check-circle"></i>Collision
+                        Damage Waiver </a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar passenger_icon" href="#" data-toggle="popover"
+                           data-content="This car has 4 seats">X 4</a></li>
+                    <li><a class="similar car_door_icon" href="#" data-toggle="popover"
+                           data-content="This car has 3 doors">X 3</a></li>
+                           
+                                                       <li><a class="similar car_luggage_icon" href="#" data-toggle="popover"
+                           data-content="This car has 2 Maximum Baggage">X 2</a></li>
+
+                           
+                    <li><a class="similar ac_icon" href="#" data-toggle="popover"
+                           data-content="This car has air conditioning">Yes</a></li>
+                    <li><a class="similar automatic_icon" href="#" data-toggle="popover"
+                           data-content="This car has Manual Unspecified Drive Transmission">Manual Unspecified
+                        Drive</a></li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <strong class="free"><a href="#" data-toggle="modal" data-target="#terms">Terms and
+                    Conditions </a></strong>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-2 col-md-3 col-sm-4">
+        <div class="transfer_price">
+            <h2 class="maroon">SAR 377.39</h2>
+        </div>
+
+        <a class="btn btn-block btn-primary close_HF" href="#">Select</a>
+
+        <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+            <a data-toggle="popover" data-content="Know More">
+                <img src="images/fur/Diamond.png" width="26" height="16">
+
+                <p>goRewards 100</p>
+            </a>
+
+        </div>
+        <div class="modal fade" id="rewards" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close1" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span
+                                class="sr-only">Close</span></button>
+                        <iframe class="iframe_width" src="rewards.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-bottom10">
+    <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="offer_red">
+            <img src="images/fur/offer.png">
+        </div>
+
+        <img class="img-responsive" src="images/fur/transfer_thumb_2.jpg">
+    </div>
+
+    <div class="col-lg-7 col-md-6 col-sm-5 no-left-padding pop">
+        <h3>MAZDA 2 1.5 AC or<a class="similar" href="#" data-toggle="popover"
+                                data-content="The image, make and model of the displayed vehicle is an example of that particular car group type. The vehicle you receive will be similar in size and performance to the one displayed but the actual make and model will depend on the availability at the time of pick-up.">Similar</a>
+        </h3>
+
+        <ul class="list_inline_upper_icon">
+            <li><span>Class: Mini </span></li>
+            <li><span class="full_to_full">Full to Full</span></li>
+        </ul>
+
+
+        <strong class="free">We give you the following for FREE:</strong>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Cancellation is free of charge although No Show is chargeable (arround 50€)"><i
+                            class="fa fa-check-circle"></i>Cancellation</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Amendment Policy: Free of charge"><i
+                            class="fa fa-check-circle"></i>Amendment</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Theft Waiver (Thw)"><i
+                            class="fa fa-check-circle"></i>Theft Waiver </a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Collision Damage Waiver (Cdw)"><i class="fa fa-check-circle"></i>Collision
+                        Damage Waiver </a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar passenger_icon" href="#" data-toggle="popover"
+                           data-content="This car has 4 seats">X 4</a></li>
+                    <li><a class="similar car_door_icon" href="#" data-toggle="popover"
+                           data-content="This car has 3 doors">X 3</a></li>
+                           
+                                                       <li><a class="similar car_luggage_icon" href="#" data-toggle="popover"
+                           data-content="This car has 2 Maximum Baggage">X 2</a></li>
+
+                           
+                    <li><a class="similar ac_icon" href="#" data-toggle="popover"
+                           data-content="This car has air conditioning">Yes</a></li>
+                    <li><a class="similar automatic_icon" href="#" data-toggle="popover"
+                           data-content="This car has Manual Unspecified Drive Transmission">Manual Unspecified
+                        Drive</a></li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <strong class="free"><a href="#" data-toggle="modal" data-target="#terms">Terms and
+                    Conditions </a></strong>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-2 col-md-3 col-sm-4">
+        <div class="transfer_price">
+            <h2 class="maroon">SAR 377.39</h2>
+        </div>
+
+        <a class="btn btn-block btn-primary close_HF" href="#">Select</a>
+
+        <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+            <a data-toggle="popover" data-content="Know More">
+                <img src="images/fur/Diamond.png" width="26" height="16">
+
+                <p>goRewards 100</p>
+            </a>
+
+        </div>
+        <div class="modal fade" id="rewards" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close1" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span
+                                class="sr-only">Close</span></button>
+                        <iframe class="iframe_width" src="rewards.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-bottom10">
+    <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="offer_red">
+            <img src="images/fur/offer.png">
+        </div>
+
+        <img class="img-responsive" src="images/fur/transfer_thumb_2.jpg">
+    </div>
+
+    <div class="col-lg-7 col-md-6 col-sm-5 no-left-padding pop">
+        <h3>MAZDA 2 1.5 AC or<a class="similar" href="#" data-toggle="popover"
+                                data-content="The image, make and model of the displayed vehicle is an example of that particular car group type. The vehicle you receive will be similar in size and performance to the one displayed but the actual make and model will depend on the availability at the time of pick-up.">Similar</a>
+        </h3>
+
+        <ul class="list_inline_upper_icon">
+            <li><span>Class: Mini </span></li>
+            <li><span class="full_to_full">Full to Full</span></li>
+        </ul>
+
+
+        <strong class="free">We give you the following for FREE:</strong>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Cancellation is free of charge although No Show is chargeable (arround 50€)"><i
+                            class="fa fa-check-circle"></i>Cancellation</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Amendment Policy: Free of charge"><i
+                            class="fa fa-check-circle"></i>Amendment</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Theft Waiver (Thw)"><i
+                            class="fa fa-check-circle"></i>Theft Waiver </a></li>
+                    <li><a class="similar" href="#" data-toggle="popover"
+                           data-content="Collision Damage Waiver (Cdw)"><i class="fa fa-check-circle"></i>Collision
+                        Damage Waiver </a></li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar passenger_icon" href="#" data-toggle="popover"
+                           data-content="This car has 4 seats">X 4</a></li>
+                    <li><a class="similar car_door_icon" href="#" data-toggle="popover"
+                           data-content="This car has 3 doors">X 3</a></li>
+                           
+                                                       <li><a class="similar car_luggage_icon" href="#" data-toggle="popover"
+                           data-content="This car has 2 Maximum Baggage">X 2</a></li>
+
+                           
+                           
+                    <li><a class="similar ac_icon" href="#" data-toggle="popover"
+                           data-content="This car has air conditioning">Yes</a></li>
+                    <li><a class="similar automatic_icon" href="#" data-toggle="popover"
+                           data-content="This car has Manual Unspecified Drive Transmission">Manual Unspecified
+                        Drive</a></li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <strong class="free"><a href="#" data-toggle="modal" data-target="#terms">Terms and
+                    Conditions </a></strong>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-2 col-md-3 col-sm-4">
+        <div class="transfer_price">
+            <h2 class="maroon">SAR 377.39</h2>
+        </div>
+
+        <a class="btn btn-block btn-primary close_HF" href="#">Select</a>
+
+        <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+            <a data-toggle="popover" data-content="Know More">
+                <img src="images/fur/Diamond.png" width="26" height="16">
+
+                <p>goRewards 100</p>
+            </a>
+
+        </div>
+        <div class="modal fade" id="rewards" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close close1" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span
+                                class="sr-only">Close</span></button>
+                        <iframe class="iframe_width" src="rewards.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="clearfix bdr_bottom"></div>
+
+
+<div class="text-right mrgn-top20">
+    <ul class="pagination">
+        <li><a href="javascript:void(0)">&laquo;</a></li>
+        <li class="active"><a href="javascript:void(0)">1</a></li>
+        <li><a href="javascript:void(0)">2</a></li>
+        <li><a href="javascript:void(0)">3</a></li>
+        <li><a href="javascript:void(0)">4</a></li>
+        <li><a href="javascript:void(0)">5</a></li>
+        <li><a href="javascript:void(0)">&raquo;</a></li>
+    </ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+<div class="tab-pane" id="change_flight">
+
+ <div class="row">
+<div class="col-lg-3 col-md-3 col-sm-4 ">
+<div class="panel-group" id="accordion1">
+<!--<div class="panel panel-default hidden">
+<div class="panel-heading">
+
+    <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+            Modify Your Search
+            <i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i>
+        </a>
+    </h4>
+
+</div>
+<div id="collapseThree" class="panel-collapse collapse">
+
+<div class="panel-body">
+<div class="my-container2">
+
+
+<div class="row ">
+    <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+        <label class="radio wht span_title">
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+            Round Trip</label>
+    </div>
+    <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+        <label class="radio wht span_title">
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio">
+            One Way</label>
+    </div>
+    <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+        <label class="radio wht span_title transfer_a">
+            <input type="radio" name="optionsRadios" id="" value="option1" data-toggle="radio">
+            Multi City</label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>From</label>
+            <input type="email" class="form-control map_icon" id="" placeholder="City or Airport"/>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>To</label>
+            <input type="email" class="form-control map_icon" id="" placeholder="City or Airport"/>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Departure Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker5">
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Time</label>
+            <select title="herolist" value="Any Time" class="select-block">
+                <option selected="selected">Any Time</option>
+                <option>08 - 12</option>
+                <option>12 - 18</option>
+                <option>18 - 22</option>
+                <option>22 - 02</option>
+                <option>02 - 08</option>
+            </select>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <label for="inputEmail" class="wht"><sup>*</sup>Return Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker6">
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Time</label>
+            <select title="herolist" value="Any Time" class="select-block">
+                <option selected="selected">Any Time</option>
+                <option>08 - 12</option>
+                <option>12 - 18</option>
+                <option>18 - 22</option>
+                <option>22 - 02</option>
+                <option>02 - 08</option>
+            </select>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Adult(s)</label>
+            <select title="herolist" value="1" class="select-block">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="allow1">
+            (12 + Years)
+
+
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Children</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="allow1">
+            (2 - 11 Years)
+
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Infants</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="allow1">
+            (Under 2 Years)
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Currency</label>
+            <select title="herolist" value="SAR" class="select-block">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="SAR" selected="selected">SAR</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+ 
+        <label class="wht"><b>Advance Search Options</b></label>
+    
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Airline Preference</label>
+            <input type="email" class="form-control map_icon" id="" placeholder="Airline Name"/>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+            <label for="inputEmail" class="wht"><sup>*</sup>Cabin Class</label>
+            <select title="herolist" value="Accomodation" class="select-block">
+                <option value="Accomodation" selected="selected">Economy</option>
+                <option value="Airport">Airport</option>
+                <option value="Other">Other</option>
+                <option value="Port">Port</option>
+                <option value="Station">Station</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox check_SH span_title">
+            <label class="wht">
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                My Dates are Flexible (+ / - 3 Days)
+            </label>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox check_SH span_title">
+            <label class="wht">
+                <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox">
+                Show only Direct Flights
+            </label>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 col-md-6 col-sm-6 pull-right mrgn-top10 ">
+        <a href="#" class="btn btn-block btn-primary">Search</a>
+    </div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>-->
+
+<div class="panel panel-default">
+<div class="panel-heading normal">
+    <h4 class="panel-title">
+        <a>
+            Filter Result
+            <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+        </a>
+    </h4>
+</div>
+
+
+<div id="" class="panel-collapse collapse in">
+
+<div class="panel-body">
+<div class="my-container2">
+
+
+<div class="row_1">
+<div id="accordion-container">
+
+
+<div class="link_clear_outer_div">
+    <a class="link_clear pull-right" id="check_div_click_6" href="javascript:void(0)">Clear Filters</a>
+</div>
+
+<h2 class="accordion-header">Stops</h2>
+
+<div class="accordion-content span_title">
+
+    <div class="check_div_6">
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    0<span class="gray_text">SAR 2000</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    1<span class="gray_text">SAR 1000</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    2 +<span class="gray_text">SAR 500</span>
+                </label>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="link_clear_outer_div">
+    <a class="link_clear pull-right" id="check_div_click_7" href="javascript:void(0)">Clear Filters</a>
+</div>
+<h2 class="accordion-header">By Airlines</h2>
+
+<div class="accordion-content span_title">
+
+    <div class="check_div_7">
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Saudi Arabian Airlines <span class="gray_text">SAR 780</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Gulf Air <span class="gray_text">SAR 800</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Qatar Airways <span class="gray_text">SAR 1000</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Fly Dubai <span class="gray_text">SAR 2000</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Kuwait Airways <span class="gray_text">SAR 1500</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Emirates <span class="gray_text">SAR 1200</span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="checkbox custom_checkbox">
+                <label>
+                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                    Oman Air <span class="gray_text">SAR 1100</span>
+                </label>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!--<div class="link_clear_outer_div">
+<a class="link_clear pull-right" id="check_div_click_2" href="javascript:void(0)">Clear Filters</a>
+            </div>
+<h2 class="accordion-header">By Airlines Consortium</h2>
+<div class="accordion-content">
+    <div class="check_div_2">
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Star Alliance<span class="gray_text">(60)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Sky Team<span class="gray_text">(17)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                One World<span class="gray_text">(72)</span>
+            </label>
+
+        </div>
+    </div>
+</div>
+
+</div>-->
+
+
+<h2 class="accordion-header closed-air closed-time">By Timings</h2>
+
+<div class="accordion-content span_title pos_relative">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="add_color_box">
+
+            <a href="#" class="close2">x</a>
+
+            <div class="row mrgn-bottom10">
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <label for="inputEmail" class="wht">Departure - Dubai </label>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="form-group">
+                        <select title="herolist" value="08 - 12" class="select-block">
+                            <option selected="selected">Any</option>
+                            <option>08 - 12</option>
+                            <option>12 - 18</option>
+                            <option>18 - 22</option>
+                            <option>22 - 02</option>
+                            <option>02 - 08</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    &nbsp;
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <label for="inputEmail" class="wht">Arrival - Kuwait</label>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="form-group">
+                        <select title="herolist" value="08 - 12" class="select-block">
+                            <option selected="selected">Any</option>
+                            <option>12 - 18</option>
+                            <option>18 - 22</option>
+                            <option>22 - 02</option>
+                            <option>02 - 08</option>
+                        </select>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <label for="inputEmail" class="wht">Departure - Kuwait </label>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="form-group">
+                        <select title="herolist" value="08 - 12" class="select-block">
+                            <option selected="selected">Any</option>
+                            <option>12 - 18</option>
+                            <option>18 - 22</option>
+                            <option>22 - 02</option>
+                            <option>02 - 08</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    &nbsp;
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <label for="inputEmail" class="wht">Arrival - Dubai</label>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="form-group">
+                        <select title="herolist" value="08 - 12" class="select-block">
+                            <option selected="selected">Any</option>
+                            <option>12 - 18</option>
+                            <option>18 - 22</option>
+                            <option>22 - 02</option>
+                            <option>02 - 08</option>
+                        </select>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 ">
+<div class="row">
+    <div class="col-lg-10 col-md-10 col-sm-10">
+        <div class="row_1">
+            <div class="arrow_div"><strong>Dubai</strong><i class="fa fa-long-arrow-right"></i></div>
+            <div class="arrow_div"><strong>Kuwait</strong><i class="fa fa-long-arrow-right"></i></div>
+            <div class="arrow_div"><strong>Dubai</strong></div>
+        </div>
+        <div class="row_1">
+            <span class="date_font_size">Wed, 15 Oct - Wed, 22 Oct <strong>|</strong> 1 adult </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-lg-2 col-md-2 col-sm-2">
+
+        <div class="row_1">
+            <div class="big_name_transfer_1">
+                <h2>15 Flights</h2>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="col-lg-12 padding_con0">
+<div class="row">
+
+<!-- Tab panes -->
+<div class="white_content_area">
+<div class="row">
+
+
+    <div class="col-lg-12">
+        <ul class="list-inline list_inline_9" id="list-inline">
+            <li><b>Sort By</b></li>
+            <li><a href="#">Duration</a></li>
+            <li><a href="#">Featured Airline</a></li>
+            <li class="active"><a href="#">Price</a></li>
+            <li><a href="#">Departure Time</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="row">
+<div class="col-lg-10 col-md-10 col-sm-10">
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+            <label> <strong class="font_size13">Airline Details</strong></label>
+
+            <div class="">
+                <img class="" src="images/fur/f1.jpg">
+
+            </div>
+            <div class="airline_name">
+                Air India
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="row_1">
+                <label> <strong class="font_size13">Departure Details</strong></label>
+            </div>
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>Dubai DXB (Dubai Intl Airport)<br>
+                        Wed, 12-Feb-2014 17:00</p>
+                    <label><strong class="font_size13">Economy</strong></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="row_1">
+                <label> <strong class="font_size13">Arrival Details</strong></label>
+            </div>
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                        Fri, 14 - Feb-2014 19:05</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="row_1">
+                <label><strong class="font_size13">Time and Stops</strong></label>
+            </div>
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>
+                        1 Stop<br>
+                        Flying Time 2 h 05m</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mrgn-top10">
+
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <div class="">
+                <img class="" src="images/fur/f2.jpg">
+
+                <div class="airline_name">
+                    Singapore Airline
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                        Fri, 14 - Feb-2014 19:05</p>
+                    <label><strong class="font_size13">Economy</strong></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>Dubai DXB (Dubai Intl Airport)<br>
+                        Wed, 14-Feb-2014 19:05</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3">
+
+            <div class="row_1">
+                <div class="description_flight">
+                    <p>
+                        1 Stop<br>
+                        Flying Time 2 h 05m</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+    <h2 class="maroon text-center">SAR 860</h2>
+        <a class="btn btn-block btn-primary close_HF" href="#">Select</a>
+
+    <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+        <a data-toggle="popover" data-content="Know More">
+            <img src="images/fur/Diamond.png" width="26" height="16">
+
+            <p>goRewards 100</p>
+        </a>
+
+    </div>
+    <div class="modal fade" id="rewards" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close close1" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span
+                            class="sr-only">Close</span></button>
+                    <iframe class="iframe_width" src="rewards.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="clearfix"></div>
+<div class="row mrgn-top10">
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+
+            <ul class="list-inline flight_ul">
+                <li><a href="#" onClick="javascript:openpopup('FD');" data-toggle="modal"
+                       data-target="#flight_popup">Flight Details</a></li>
+                <li><a href="#" onClick="javascript:openpopup('FR');" data-toggle="modal"
+                       data-target="#flight_popup">Fare Rules</a></li>
+                <li><a href="#" onClick="javascript:openpopup('BI');" data-toggle="modal"
+                       data-target="#flight_popup">Baggage Information</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row_1 collapse pos_relative" id="collapseH">
+    <div class="add_color">
+        <div class="col-lg-10 col-md-10 col-sm-10">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+
+                    <label> <strong class="font_size13">Airline Details</strong></label>
+
+                    <div class="">
+                        <img class="" src="images/fur/f1.jpg">
+
+                        <div class="airline_name">
+                            Air india
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="row_1">
+                        <label> <strong class="font_size13">Departure Details</strong></label>
+                    </div>
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>Dubai DXB (Dubai Intl Airport)<br>
+                                Wed, 12-Feb-2014 17:00</p>
+                            <label><strong class="font_size13">Economy</strong></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="row_1">
+                        <label> <strong class="font_size13">Arrival Details</strong></label>
+                    </div>
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                                Fri, 14 - Feb-2014 19:05</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="row_1">
+                        <label><strong class="font_size13">Time and Stops</strong></label>
+                    </div>
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>
+                                1 Stop<br>
+                                Flying Time 2 h 05m</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mrgn-top10">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="">
+                        <img class="" src="images/fur/f2.jpg"></div>
+                    <div class="airline_name">
+                        Singapore Airline
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                                Fri, 14 - Feb-2014 19:05</p>
+                            <label><strong class="font_size13">Economy</strong></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>Dubai DXB (Dubai Intl Airport)<br>
+                                Wed, 14-Feb-2014 19:05</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+
+                    <div class="row_1">
+                        <div class="description_flight">
+                            <p>
+                                1 Stop<br>
+                                Flying Time 2 h 05m</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <h2 class="maroon text-center">SAR 860</h2>
+        <a class="btn btn-block btn-primary close_HF" href="#">Select</a>
+
+            <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+                <a data-toggle="popover" data-content="Know More">
+                    <img src="images/fur/Diamond.png" width="20" height="16">
+
+                    <p>goRewards 100</p>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="row_1 mrgn-top10">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+
+                <ul class="list-inline flight_ul">
+                    <li><a href="#" onClick="javascript:openpopup('FD');" data-toggle="modal"
+                           data-target="#flight_popup">Flight Details</a></li>
+                    <li><a href="#" onClick="javascript:openpopup('FR');" data-toggle="modal"
+                           data-target="#flight_popup">Fare Rules</a></li>
+                    <li><a href="#" onClick="javascript:openpopup('BI');" data-toggle="modal"
+                           data-target="#flight_popup">Baggage Information</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-5 flight_more_result">
+    <label class="mrgn-0"><a class="link_shadow fa fa-plus" data-toggle="collapse" data-target="#collapseH"
+                             id="collapseP"><span>1 more options at same price</span></a></label>
+
+</div>
+
+
+</div>
+
+<div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <button type="button" class="close close1" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <iframe class="iframe_width" id="xyz" src="fh_description.html"></iframe>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row">
+    <div class="col-lg-10 col-md-10 col-sm-10">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+
+                <label> <strong class="font_size13">Airline Details</strong></label>
+
+                <div class="">
+                    <img class="" src="images/fur/f1.jpg">
+                </div>
+                <div class="airline_name">
+                    Air india
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="row_1">
+                    <label> <strong class="font_size13">Departure Details</strong></label>
+                </div>
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>Dubai DXB (Dubai Intl Airport)<br>
+                            Wed, 12-Feb-2014 17:00</p>
+                        <label><strong class="font_size13">Economy</strong></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="row_1">
+                    <label> <strong class="font_size13">Arrival Details</strong></label>
+                </div>
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                            Fri, 14 - Feb-2014 19:05</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="row_1">
+                    <label><strong class="font_size13">Time and Stops</strong></label>
+                </div>
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>
+                            1 Stop<br>
+                            Flying Time 2 h 05m</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mrgn-top10">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="">
+                    <img class="" src="images/fur/f2.jpg"></div>
+                <div class="airline_name">
+                    Singapore Airline
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>Kuwait, KWI (Kuwat Intl Airport)<br>
+                            Fri, 14 - Feb-2014 19:05</p>
+                        <label><strong class="font_size13">Economy</strong></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>Dubai DXB (Dubai Intl Airport)<br>
+                            Wed, 14-Feb-2014 19:05</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+
+                <div class="row_1">
+                    <div class="description_flight">
+                        <p>
+                            1 Stop<br>
+                            Flying Time 2 h 05m</p>
+                    </div>
+                    <label><strong class="font_size13">Economy</strong></label>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-2 col-md-2 col-sm-2">
+        <h2 class="maroon text-center">SAR 860</h2>
+        <a class="btn btn-block btn-primary close_HF" href="#">Select</a>
+
+
+        <div class="loyalty_point1 pop" data-toggle="modal" data-target="#rewards">
+            <a data-toggle="popover" data-content="Know More">
+                <img src="images/fur/Diamond.png" width="26" height="16">
+
+                <p>goRewards 100</p>
+            </a>
+
+        </div>
+
+
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="row mrgn-top10">
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 ">
+
+
+                <ul class="list-inline flight_ul">
+                    <li><a href="#" onClick="javascript:openpopup('FD');" data-toggle="modal"
+                           data-target="#flight_popup">Flight Details</a></li>
+                    <li><a href="#" onClick="javascript:openpopup('FR');" data-toggle="modal"
+                           data-target="#flight_popup">Fare Rules</a></li>
+                    <li><a href="#" onClick="javascript:openpopup('BI');" data-toggle="modal"
+                           data-target="#flight_popup">Baggage Information</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="clearfix bdr_bottom"></div>
+
+
+<div class="text-right">
+    <ul class="pagination">
+        <li><a href="javascript:void(0)">&laquo;</a></li>
+        <li class="active"><a href="javascript:void(0)">1</a></li>
+        <li><a href="javascript:void(0)">2</a></li>
+        <li><a href="javascript:void(0)">3</a></li>
+        <li><a href="javascript:void(0)">4</a></li>
+        <li><a href="javascript:void(0)">5</a></li>
+        <li><a href="javascript:void(0)">&raquo;</a></li>
+    </ul>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+    
+
+
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="footer">
+    <div class="container-fluid">
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 ">
+                    <ul class="footer_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">Email </a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"> F.A.Q. </a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a class="no" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="clearfix visible-sm"></div>
+
+                <div class="col-lg-4 col-md-4 col-sm-9 col-xs-12 ">
+                    <div class="col-lg-5 col-md-5 col-sm-3">
+                        <strong class="newsletter">Newsletter</strong>
+                    </div>
+
+
+                    <div class="col-lg-7 col-md-7 col-sm-9">
+
+                        <div class="form-group">
+                            <input type="text" value="Enter your Email Address" class="form-control bdr" id="inputEmail"
+                                   placeholder="Email">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                    <div class="social_media_con">
+                        <ul class="list">
+                            <li><a href="#" class="zoomimg"><img src="images/fur/facebook.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/twitter.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/google.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/instagram.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/linkedin.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container  my-container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
+                    <div class="powered">Powered by: Travel Cloud Suite</div>
+
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 ">
+                    <div class="copy">
+                        GoFursan &copy; 2014. All Rights Reserved.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--<script src="javascript/fur/jquery-1.9.1.min.js"></script>-->
+<script type="text/javascript" src="javascript/fur/jquery.min.v.1.11.1.js"></script>
+<script src="javascript/fur/bootstrap.min.js"></script>
+<script src="javascript/fur/bootstrap-datepicker.js"></script>
+<script src="javascript/fur/bootstrap-tooltip.js"></script>
+<script src="javascript/fur/bootstrap-select1.js"></script>
+<script src="javascript/fur/flatui-checkbox.js"></script>
+<script src="javascript/fur/flatui-radio.js"></script>
+<script src="javascript/fur/application.js"></script>
+<script src="javascript/fur/vallenato.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+    $('#modify').on('click', function (e) {
+        $('#modify_con').slideToggle("slow")
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+								
+$('#btnCC').click(function(){
+  $('.all_hide').css('display','block');
+  $('.change_tab li:last').removeClass( "active" );
+  $('.change_tab li:first').addClass( "active" );
+  
+ $('#change_car').addClass( "active" );
+ $('#change_flight').removeClass( "active" );
+
+
+
+});								
+								
+$('#btnCF').click(function(){
+   $('.all_hide').css('display','block');						   
+  $('.change_tab li:last').addClass( "active" );
+  $('.change_tab li:first').removeClass( "active" );
+  
+   $('#change_car').removeClass( "active" );
+ $('#change_flight').addClass( "active" );
+});
+
+
+$('.close_HF').click(function(){
+   $('.all_hide').css('display','none')
+   
+});
+
+});
+</script>
+
+<script type="text/javascript">
+    $('#collapseP').on('click', function (e) {
+        $('#collapseP').toggleClass('fa-minus , fa-plus', function () {
+            $(this).slideToggle("slow")
+        });
+    });
+	
+</script>
+
+
+<script type="text/javascript">
+    $('#collapseP1').on('click', function (e) {
+        $('#collapseP1').toggleClass('fa-chevron-right , fa-chevron-down', function () {
+            $(this).slideToggle("slow")
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+    $('.check_SH').on('click', function (e) {
+        $('.check_div').slideToggle()
+        });
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+$('.pop a').popover({ trigger: "hover",  placement: 'top' });
+    });
+</script>
+
+
+<script type="text/javascript">
+    $('#collapseP').on('click', function (e) {
+        $('#collapseP').toggleClass('fa-minus , fa-plus', function () {
+            $(this).slideToggle("slow")
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datepicker();
+        $('#datetimepicker2').datepicker();
+        $('#datetimepicker3').datepicker();
+        $('#datetimepicker4').datepicker();
+        $('#datetimepicker5').datepicker();
+        $('#datetimepicker6').datepicker();
+    });
+	
+	            $(function() {
+                $("select[title='herolist']").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
+
+            });
+	
+	
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.in').siblings().addClass('current');
+        function toggleChevron(e) {
+            $(e.target)
+                    .prev('.panel-heading')
+                    .find("i.indicator")
+                    .toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+        function toggleColor(e) {
+            $(e.target).siblings().toggleClass('current');
+        }
+        $('#accordion').on('shown.bs.collapse', toggleColor);
+        $('#accordion').on('hidden.bs.collapse', toggleColor);
+        $('.popover-dismiss').popover({
+            trigger: 'hover'
+        });
+        var $active = true;
+		
+		$('.accordion').on('show', function (e) {
+        $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+    });
+        $('.accordion').on('hide', function (e) {
+            $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.in').siblings().addClass('current');
+        function toggleChevron(e) {
+            $(e.target)
+                    .prev('.panel-heading')
+                    .find("i.indicator")
+                    .toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        }
+        $('#accordion1').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion1').on('shown.bs.collapse', toggleChevron);
+        function toggleColor(e) {
+            $(e.target).siblings().toggleClass('current');
+        }
+        $('#accordion1').on('shown.bs.collapse', toggleColor);
+        $('#accordion1').on('hidden.bs.collapse', toggleColor);
+        $('.popover-dismiss').popover({
+            trigger: 'hover'
+        });
+        var $active = true;
+		
+		$('.accordion1').on('show', function (e) {
+        $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+    });
+        $('.accordion1').on('hide', function (e) {
+            $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+        });
+    });
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+
+$('.check_div_1 .custom_checkbox').click(function(){
+		    $("#check_div_click_1").css("display","block");
+   }) ;
+
+$("#check_div_click_1").click(function(){
+        $(".check_div_1 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_1").css("display","none");
+		
+});
+
+
+$('.check_div_2 .custom_checkbox').click(function(){
+    $("#check_div_click_2").css("display","block");
+   }) ;
+
+$("#check_div_click_2").click(function(){
+        $(".check_div_2 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_2").css("display","none");
+});
+
+
+$('.check_div_3 .custom_checkbox').click(function(){
+    $("#check_div_click_3").css("display","block");
+   }) ;
+
+$("#check_div_click_3").click(function(){
+        $(".check_div_3 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_3").css("display","none");
+});
+
+
+$('.check_div_4 .custom_checkbox').click(function(){
+    $("#check_div_click_4").css("display","block");
+   }) ;
+
+$("#check_div_click_4").click(function(){
+        $(".check_div_4 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_4").css("display","none");
+});
+
+
+
+$('.check_div_5 .custom_checkbox').click(function(){
+    $("#check_div_click_5").css("display","block");
+   }) ;
+
+$("#check_div_click_5").click(function(){
+        $(".check_div_5 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_5").css("display","none");
+});
+
+
+
+$('.check_div_6 .custom_checkbox').click(function(){
+    $("#check_div_click_6").css("display","block");
+   }) ;
+
+$("#check_div_click_6").click(function(){
+        $(".check_div_6 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_6").css("display","none");
+});
+
+
+
+$('.check_div_7 .custom_checkbox').click(function(){
+    $("#check_div_click_7").css("display","block");
+   }) ;
+
+$("#check_div_click_7").click(function(){
+        $(".check_div_7 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_7").css("display","none");
+});
+
+</script>
+
+
+<script	type="text/javascript" >
+		function openpopup(str)
+		{
+            $('#xyz').attr('src', 'fhh_description.html?tab=' + str);
+            $('#abc').attr('src', 'fh_description.html?tab=' + str);
+		}
+	</script>
+
+</body>
+</html>

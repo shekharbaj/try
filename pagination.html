@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compitable" content="IE=edge">
+
+    <title>GoFursan</title>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/flat-ui.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/theme.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/fur/vallenato.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-social.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/datepicker.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/font-awesome.css" media="all"/>
+
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="container-fluid border_bot bg_wht">
+<div class="container ">
+<div class="row mrgn-tp-bt10">
+<div class="col-lg-2 col-sm-3 col-xs-12 col-md-3">
+    <a href="index.html" class="logo">
+        <img class="img-responsive" src="images/fur/gofursan-logo.png">
+    </a>
+</div>
+<div class="col-lg-10 col-sm-9 col-xs-12  col-md-9">
+<div class="row">
+            <ul class="list-inline change_color">
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Register</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal1">Sign In</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+
+    <!-- Register Modal HTML Here -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close1" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h1 class="modal-title" id="myModalLabel">Register</h1>
+                </div>
+
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="exampleInputEmail1">Register Using Your Facebook Account</label>
+                            <a class="btn btn-block btn-social btn-facebook"
+                               onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                <i class="fa fa-facebook"></i> Register with Facebook</a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1"> or Register with your Email Id</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           placeholder="Enter email">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+
+                        <div class="col-lg-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked="checked" value="" id="checkbox2"
+                                           data-toggle="checkbox" checked="">
+                                    I am interested to receive Promotions and Special Offers
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                                    I have read, understood and accept the Privacy Policy and Terms and Conditions
+                                </label>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="manage_my_bookings.html" class="btn btn-block btn-primary">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Sign In Modal HTML Here -->
+            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close close1" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h1 class="modal-title" id="myModalLabel">Sign In</h1>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-5 col-md-5 col-sm-5 "> <a class="btn btn-block btn-social btn-facebook" onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);"> <i class="fa fa-facebook"></i> Sign In with Facebook</a> </div>
+                      <div class="col-lg-7 col-md-7 col-sm-7 ">
+                        <label for="exampleInputEmail1"> <strong>OR</strong> Sign In using your Email ID</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-8 ">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your registered email id">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-8 col-md-8 col-sm-8 ">
+                        <form role="form">
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 pd-top25"> <a class="link" href="">I Forgot my Password</a> </div>
+                    </div>
+                    <div class="row pd-top10">
+                      <div class="col-lg-4 col-md-4 col-sm-4"> <a href="manage_my_bookings.html" class="btn btn-block btn-primary">Sign In</a> </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p>Sign in to manage your bookings and update your profiles.<br>
+                          if you don’t have an Account&nbsp; <a href="#" data-dismiss="modal" class="link_paragraph" data-toggle="modal" data-target="#myModal" target="_top">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+</div>
+<div class="row">
+    <div class="col-lg-12 pd_R">
+        <div class="navbar navbar-default" role="navigation">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand visible-xs" href="#">Menu</a>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav custom_float">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flight_search.html">Flights</a></li>
+                    <li class="active"><a href="index.html">Hotels</a></li>
+                    <li><a href="sightseeing_search.html">Sightseeing</a></li>
+                    <li><a href="transfer_search.html">Transfers</a></li>
+                    <li><a href="car_search.html">Car</a></li>
+                    <li><a href="cruise_search.html">Cruise</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row mrgn-tp-bt20">
+<div class="col-lg-3 col-md-3 col-sm-4 ">
+<div class="panel-group" id="accordion">
+<div class="panel panel-default">
+    <div class="panel-heading">
+
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Modify Your Search
+            <i class="indicator glyphicon glyphicon-chevron-right  pull-right"></i>
+            </a>
+        </h4>
+
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+
+<div class="panel-body">
+<div class="my-container2">
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-group">
+
+            <label for="inputEmail" class="wht">Enter a City, Location or Hotel</label>
+
+            <input type="email" class="form-control map_icon" placeholder="Enter a City, Location or Hotel"
+                   list="countries"/>
+
+            <datalist id="countries">
+                <option value="Afghanistan">
+                <option value="Albania">
+                <option value="United Kingdom">
+                <option value="United States">
+                <option value="Vanuatu">
+                <option value="Vatican City">
+                <option value="Yemen">
+                <option value="Zambia">
+                <option value="Zimbabwe">
+                <option value="Afghanistan">
+                <option value="Albania">
+                <option value="United Kingdom">
+                <option value="United States">
+                <option value="Vanuatu">
+                <option value="Vatican City">
+                <option value="Yemen">
+                <option value="Zambia">
+                <option value="Zimbabwe">
+            </datalist>
+
+        </div>
+
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+
+        <label for="inputEmail" class="wht">Check-in-Date</label>
+        <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker1">
+
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <div class="form-group">
+
+            <label for="inputEmail" class="wht">Check-out-Date</label>
+
+            <input class="form-control calendar_gray" type="text" placeholder="dd/mmm/yyyy" id="datetimepicker2">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Total Night</label>
+            <input type="text" class="form-control" placeholder="2"/>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <div class="form-group">
+
+            <label for="inputEmail" class="wht">Room(s)</label>
+            <select title="herolist" value="Rooms" class="select-block">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-4 col-md-12 col-sm-12 ">
+        <label for="inputEmail" class="wht mrgn-top35">Room 1</label>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Adults</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="0">0</option>
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="form-group">
+
+            <label for="inputEmail" class="wht">Children</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2" selected="selected">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="row mrgn-tp-bt15">
+
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <label for="inputEmail" class="wht">Room 2</label>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="form-group">
+            <select title="herolist" value="0" class="select-block">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2" selected="selected">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6 mrgn_top20_visible_xs">
+        <div class="form-group">
+
+            <select title="herolist" value="0" class="select-block">
+                <option value="0">0</option>
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <label>Specify Room wise Child age</label>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <label for="inputEmail" class="wht mrgn-top35">Room 1</label>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="form-group">
+            <label for="inputEmail" class="wht">Child 1</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="Age">Age</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="form-group">
+
+            <label for="inputEmail" class="wht">Child 2</label>
+            <select title="herolist" value="0" class="select-block">
+                <option value="Age">Age</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="row mrgn-top15">
+
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <label for="inputEmail" class="wht">Room 2</label>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="form-group">
+            <select title="herolist" value="0" class="select-block">
+                <option value="Age">Age</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 col-sm-6 mrgn_top20_visible_xs">
+        <div class="form-group">
+
+            <select title="herolist" value="0" class="select-block">
+                <option value="Age">Age</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
+        <div class="form-group">
+
+            <label for="inputEmail" class="wht">Currency</label>
+            <select title="herolist" value="SAR" class="select-block">
+                <option value="INR">INR</option>
+                <option value="Doller">Doller</option>
+                <option value="SAR" selected="selected">SAR</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right">
+        <label for="inputEmail" class="wht">&nbsp;</label>
+
+        <a href="javascript:void(0)" class="btn btn-block btn-primary">Search</a>
+    </div>
+
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading normal">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Filter Result
+            <i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+            </a>
+        </h4>
+    </div>
+
+
+<div id="collapseTwo" class="panel-collapse collapse in">
+
+<div class="panel-body">
+<div class="my-container2">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="form-group link_clear_outer_div">
+
+            <label for="inputEmail" class="wht">Hotel Name</label><a href="#" class="link_clear_1 pull-right">Clear<i class="fa fa-times"></i>
+</a>
+
+            <input type="email" class="form-control search_icon" placeholder="le Meredian"/>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="row_1">
+<div id="accordion-container">
+
+<div class="link_clear_outer_div">
+    <a class="link_clear pull-right" id="check_div_click_1" href="javascript:void(0)">Clear Filter</a>
+</div>
+<h2 class="accordion-header">Star Rating</h2>
+
+<div class="accordion-content">
+	
+    <div class="check_div_1">
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                1 Star  <span class="gray_text">(7)</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                2 Star  <span class="gray_text">(76)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                3 Star  <span class="gray_text">(112)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                4 Star  <span class="gray_text">(39)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                5 Star  <span class="gray_text">(21)</span>
+            </label>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="row_1" style="border-bottom: 1px solid #ccc; ">
+    <div class="checkbox custom_checkbox">
+        <label> <strong>Show Offers</strong>
+            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+
+        </label>
+
+    </div>
+</div>
+
+<div class="link_clear_outer_div">
+<a class="link_clear pull-right" id="check_div_click_2" href="javascript:void(0)">Clear Filter</a>
+            </div>
+
+<h2 class="accordion-header">Locations</h2>
+
+<div class="accordion-content">
+    <div class="check_div_2">
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                All Barsha<span class="gray_text">(15)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Bastakiya<span class="gray_text">(50)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Bur Dubai<span class="gray_text">(60)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Deira<span class="gray_text">(17)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Grand Mosque<span class="gray_text">(72)</span>
+            </label>
+
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="link_clear_outer_div">
+<a class="link_clear pull-right" id="check_div_click_3" href="javascript:void(0)">Clear Filter</a>
+            </div>
+
+<h2 class="accordion-header">Property Type</h2>
+
+<div class="accordion-content">
+
+    <div class="check_div_3">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Resort<span class="gray_text">(100)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Hotel<span class="gray_text">(150)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Apartment<span class="gray_text">(251)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Villa<span class="gray_text">(18)</span>
+            </label>
+
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="link_clear_outer_div">
+<a class="link_clear pull-right" id="check_div_click_4" href="javascript:void(0)">Clear Filter</a>
+            </div>
+
+<h2 class="accordion-header">Ameneties</h2>
+
+<div class="accordion-content">
+
+    <div class="check_div_4">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Bar<span class="gray_text">(46)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Business Center<span class="gray_text">(35)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Pool<span class="gray_text">(62)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Gym<span class="gray_text">(13)</span>
+            </label>
+
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="link_clear_outer_div">
+<a class="link_clear pull-right" id="check_div_click_5" href="javascript:void(0)">Clear Filter</a>
+            </div>
+
+<h2 class="accordion-header">Hotel Chains</h2>
+
+<div class="accordion-content">
+
+    <div class="check_div_5">
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Romada<span class="gray_text">(41)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Rotana<span class="gray_text">(31)</span>
+            </label>
+
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                Ramee Group<span class="gray_text">(92)</span>
+            </label>
+
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-8 ">
+<div class="col-lg-12 padding_con0">
+<div class="row">
+
+
+</div>
+
+<div class="row pos_relative">
+
+<div class="hotel_name">
+
+    <div class="big_name">
+        <h2>Dubai, UAE</h2>
+    </div>
+    <div class="description">
+        <p>Thu, 12 Feb. 2014 - Fri, 14 Feb. 2014<br>
+            2 Room - 3 Adult, 3 Child</p>
+
+    </div>
+
+    <div class="big_name_1">
+        <h2>417 Hotels</h2>
+    </div>
+
+
+</div>
+
+
+<ul class="nav nav-tabs tab_width" role="tablist">
+    <li class="active"><a href="#list" role="tab" data-toggle="tab">List View</a></li>
+    <li><a href="#map" role="tab" data-toggle="tab">Map View</a></li>
+</ul>
+
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div class="tab-pane active" id="list">
+<div class="row">
+
+    <div class="col-lg-12">
+        <ul class="list-inline list_inline_9" id="list-inline">
+           <li><b>Sort By</b></li>
+            <li><a href="#">Featured</a></li>
+            <li class="active"><a href="#">Price</a></li>
+            <li><a href="#">Name</a></li>
+
+
+            <li><a href="#">Stars</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+<div class="">
+    <ul class="pagination">
+        <li><a href="javascript:void(0)">&laquo;</a></li>
+        <li class="active"><a href="javascript:void(0)">1</a></li>
+        <li><a href="javascript:void(0)">2</a></li>
+        <li><a href="javascript:void(0)">3</a></li>
+        <li><a href="javascript:void(0)">4</a></li>
+        <li><a href="javascript:void(0)">5</a></li>
+        <li><a href="javascript:void(0)">&raquo;</a></li>
+
+    </ul>
+    
+    
+ 
+    <ul class="" id="tblPagingbottom">
+
+        <div class="btn disabled">Prev</div>
+        <ul class="pagination">
+            <li><a id="1" class="green normal active" href="javascript:void(0)">1</a></li>
+            <li><a id="2" class="green normal" href="javascript:void(0)">2</a></li>
+            <li><a id="3" class="green normal" href="javascript:void(0)">3</a></li>
+            <li><a id="4" class="green normal" href="javascript:void(0)">4</a></li>
+            <li><a id="5" class="green normal" href="javascript:void(0)">5</a></li>
+            <li><a id="6" class="green normal" href="javascript:void(0)">6</a></li>
+        </ul>
+        <div class="btn disabled">Next</div>
+        <div class="short"></div>
+    </ul>
+
+
+     
+          
+          
+          
+
+ <style type="text/css">
+ 
+ #tblPagingbottom{ margin:0; padding:0;}
+ 
+ .pagination.disabled li a{ margin:0; }
+ 
+ </style>
+    
+     
+    
+    
+</div>
+
+
+</div>
+<div class="tab-pane" id="map">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div class="map_1">
+
+
+                <div class="col-lg-6 col-md-6 col-sm-8 pos_absolute">
+                    <input type="text" class="form-control" placeholder="Hotel Name or Location"/>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+    <div class="container-fluid">
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12  col-xs-12 ">
+                    <ul class="footer_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">Email </a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"> F.A.Q. </a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a class="no" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="clearfix visible-sm"></div>
+
+                <div class="col-lg-4 col-md-4 col-sm-9 col-xs-12 ">
+                    <div class="col-lg-5 col-md-5 col-sm-3">
+                        <strong class="newsletter">Newsletter</strong>
+                    </div>
+
+
+                    <div class="col-lg-7 col-md-7 col-sm-9">
+
+                        <div class="form-group">
+                            <input type="text" value="Enter your Email Address" class="form-control bdr" id="inputEmail"
+                                   placeholder="Email">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                    <div class="social_media_con">
+                        <ul class="list">
+                            <li><a href="#" class="zoomimg"><img src="images/fur/facebook.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/twitter.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/google.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/instagram.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/linkedin.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container  my-container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
+                    <div class="powered">Powered by: Travel Cloud Suite</div>
+
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 ">
+                    <div class="copy">
+                        GoFursan &copy; 2014. All Rights Reserved.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--<script src="javascript/fur/jquery-1.9.1.min.js"></script>-->
+<script type="text/javascript" src="javascript/fur/jquery.min.v.1.11.1.js"></script>
+<script src="javascript/fur/bootstrap.min.js"></script>
+<script src="javascript/fur/bootstrap-datepicker.js"></script>
+<script src="javascript/fur/bootstrap-tooltip.js"></script>
+<script src="javascript/fur/bootstrap-select1.js"></script>
+<script src="javascript/fur/flatui-checkbox.js"></script>
+<script src="javascript/fur/flatui-radio.js"></script>
+<script src="javascript/fur/application.js"></script>
+<script src="javascript/fur/vallenato.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+$('.pop a').popover({ trigger: "hover",  placement: 'top' });
+    });
+</script>
+
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datepicker();
+        $('#datetimepicker2').datepicker();
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.in').siblings().addClass('current');
+        function toggleChevron(e) {
+            $(e.target)
+                    .prev('.panel-heading')
+                    .find("i.indicator")
+                    .toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+        function toggleColor(e) {
+            $(e.target).siblings().toggleClass('current');
+        }
+        $('#accordion').on('shown.bs.collapse', toggleColor);
+        $('#accordion').on('hidden.bs.collapse', toggleColor);
+        $('.popover-dismiss').popover({
+            trigger: 'hover'
+        });
+        var $active = true;
+		
+		$('.accordion').on('show', function (e) {
+        $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+    });
+        $('.accordion').on('hide', function (e) {
+            $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+        });
+    });
+</script>
+<script type="text/javascript">
+
+
+$('.check_div_1 .custom_checkbox').click(function(){
+		    $("#check_div_click_1").css("display","block");
+   }) ;
+
+$("#check_div_click_1").click(function(){
+        $(".check_div_1 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_1").css("display","none");
+		
+});
+
+
+$('.check_div_2 .custom_checkbox').click(function(){
+    $("#check_div_click_2").css("display","block");
+   }) ;
+
+$("#check_div_click_2").click(function(){
+        $(".check_div_2 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_2").css("display","none");
+});
+
+
+$('.check_div_3 .custom_checkbox').click(function(){
+    $("#check_div_click_3").css("display","block");
+   }) ;
+
+$("#check_div_click_3").click(function(){
+        $(".check_div_3 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_3").css("display","none");
+});
+
+
+$('.check_div_4 .custom_checkbox').click(function(){
+    $("#check_div_click_4").css("display","block");
+   }) ;
+
+$("#check_div_click_4").click(function(){
+        $(".check_div_4 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_4").css("display","none");
+});
+
+
+
+$('.check_div_5 .custom_checkbox').click(function(){
+    $("#check_div_click_5").css("display","block");
+   }) ;
+
+$("#check_div_click_5").click(function(){
+        $(".check_div_5 .custom_checkbox").removeClass('checked');
+		$("#check_div_click_5").css("display","none");
+});
+
+</script>
+
+
+<script	type="text/javascript" >
+		function openpopup(str)
+		{
+            $('#xyz').attr('src', 'hotel_description.html?tab=' + str);
+		}
+	</script>
+</body>
+</html>

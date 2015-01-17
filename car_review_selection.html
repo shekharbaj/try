@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compitable" content="IE=edge">
+    <title>GoFursan</title>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/flat-ui.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/theme.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-select.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/vallenato.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/bootstrap-social.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/fur/font-awesome.css" media="all"/>
+    
+    
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="container-fluid border_bot bg_wht">
+    <div class="container ">
+        <div class="row mrgn-tp-bt10">
+            <div class="col-lg-2 col-sm-3 col-xs-12 col-md-3">
+                <a href="index.html" class="logo">
+                    <img class="img-responsive" src="images/fur/gofursan-logo.png">
+                </a>
+            </div>
+            <div class="col-lg-10 col-sm-9 col-xs-12  col-md-9">
+                <div class="row">
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <ul class="list-inline change_color">
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">Register</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal1">Sign In</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+
+                            <!-- Register Modal HTML Here -->
+
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close close1" data-dismiss="modal"><span
+                                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                            </button>
+                                            <h1 class="modal-title" id="myModalLabel">Register</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                                    <label for="exampleInputEmail1">Register Using Your Facebook
+                                                        Account</label>
+                                                    <a class="btn btn-block btn-social btn-facebook"
+                                                       onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                                        <i class="fa fa-facebook"></i> Register with Facebook</a></div>
+                                                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                                    <form role="form">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1"> or Register with your Email
+                                                                Id</label>
+                                                            <input type="email" class="form-control"
+                                                                   id="exampleInputEmail1" placeholder="Enter email">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" checked="checked" value=""
+                                                                   id="checkbox2" data-toggle="checkbox" checked="">
+                                                            I am interested to receive Promotions and Special
+                                                            Offers.</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="" id="checkbox1"
+                                                                   data-toggle="checkbox">
+                                                            I have read, understood and accept the Privacy Policy and
+                                                            Terms and Conditions.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 "><a
+                                                        href="manage_my_bookings.html"
+                                                        class="btn btn-block btn-primary">Register</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sign In Modal HTML Here -->
+                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close close1" data-dismiss="modal"><span
+                                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                            </button>
+                                            <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <h1 class="modal-title" id="myModalLabel">Sign In</h1>
+                                            </div>
+                                            <div class="col-lg-5 col-md-5 col-sm-5"><a data-dismiss="modal"
+                                                                                           class="btn btn-block btn-primary" href="">Continue Without Sign In</a></div>
+                                                                                           
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-5 col-md-5 col-sm-5 "><a
+                                                        class="btn btn-block btn-social btn-facebook"
+                                                        onClick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                                                    <i class="fa fa-facebook"></i> Sign In with Facebook</a></div>
+                                                <div class="col-lg-7 col-md-7 col-sm-7 ">
+                                                    <label for="exampleInputEmail1"> <strong>OR</strong> Sign In using
+                                                        your Email ID</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                                    <form role="form">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Email ID</label>
+                                                            <input type="email" class="form-control"
+                                                                   id="exampleInputEmail1"
+                                                                   placeholder="Your registered email id">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-8 col-sm-8 ">
+                                                    <form role="form">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Password</label>
+                                                            <a class="link_forget" href=""> ( I Forgot my Password )</a>
+                                                            <input type="password" class="form-control"
+                                                                   id="exampleInputPassword1" placeholder="Password">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="row pd-top10">
+                                                <div class="col-lg-4 col-md-4 col-sm-4"><a data-dismiss="modal" 
+                                                        href="manage_my_bookings.html"
+                                                        class="btn btn-block btn-primary">Sign In</a></div>
+                                                
+
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-8 col-sm-8">
+<p>If you don't have an account Register Now with Facebook or just an email address</p>
+                                                </div>
+                                                
+                                                 <div class="col-lg-4 col-md-4 col-sm-4 ">
+                                                <a href="#" data-dismiss="modal" class="btn btn-block btn-primary" data-toggle="modal" data-target="#myModal" target="_top">Register Now</a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 pd_R">
+                        <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                        class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand visible-xs" href="#">Menu</a></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav custom_float">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="flight_search.html">Flights</a></li>
+                    <li><a href="hotel_search.html">Hotels</a></li>
+                    <li class="active"><a href="car_search.html">Cars</a></li>
+                   <li><a href="fh_search.html">Flight + Hotels</a></li>
+
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle " data-toggle="dropdown">More <span class="caret"></span></a>
+                     <ul class="dropdown-menu" role="menu">
+					<li><a href="sightseeing_search.html">Sightseeing</a></li>
+                    <li><a href="transfer_search.html">Transfers</a></li>
+                    <li><a href="cruises_search.html">Cruises</a></li>
+                    <li><a href="package_search.html">Packages</a></li>
+                    <li><a href="fc_search.html">Flights + Car</a></li>
+                    <li><a href="other_services.html">Other Services</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row pd-top20">
+<div class="panel-group review-selection" id="accordion">
+<div class="panel panel-default">
+<div class="panel-heading current">
+    <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            Review Your Selection
+            <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+        </a>
+    </h4>
+</div>
+<div id="collapseOne" class="panel-collapse collapse in">
+<div class="panel-body">
+<div class="row pd-bottom10">
+
+<div class="col-lg-8">
+<div class="row">
+<div class="col12">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><label><b>Pickup 30 Oct 2014</b></label></div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><label><b>Pickup Time 10:00</b></label></div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><label><b>Drop-off 31 Oct 2014</b></label></div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><label><b>Drop-off Time 10:00</b></label></div>
+</div>
+
+</div>
+
+
+
+<div class="row_1 mrgn-tp-bt10">
+<div class="col12 highlight_gray">
+<div class="col-lg-1 col-md-1 col-sm-1 ">
+<i class="fa fa-clock-o"></i>
+</div>
+<div class="col-lg-11 col-lg-md col-sm-11">
+<p>
+ It’s busy in london gatwick airport on your dates, prices are likely to rise. <br>
+Tip: Don’t wait until it’s too late! Book now so you don’t miss out on today’s price.
+</p>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="row_1 mrgn-bottom10">
+<div class="col12 highlight_gray">
+<div class="col-lg-1 col-md-1 col-sm-1 ">
+<i class="fa fa-check-circle"></i>
+</div>
+<div class="col-lg-11 col-lg-md col-sm-11">
+<p>
+ Free Cancellation up to 48 hours before your pickup!
+</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="row mrgn-bottom10">
+    <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="offer_red">
+<img src="images/fur/offer.png">
+</div>
+
+        <a href="#"><img class="img-responsive" src="images/fur/transfer_thumb_2.jpg"></a>
+    </div>
+
+    <div class="col-lg-5 col-md-5 col-sm-5 pop pos_relative bdr_right">
+     <h3 class="heading_1">MAZDA 2 1.5 AC or<a class="similar" href="#" data-toggle="popover" data-content="The image, make and model of the displayed vehicle is an example of that particular car group type. The vehicle you receive will be similar in size and performance to the one displayed but the actual make and model will depend on the availability at the time of pick-up.">Similar</a></h3>
+     
+     <ul class="list_inline_upper_icon">
+                    <li><span>Class: Mini </span></li>
+                    </ul>
+     
+             <strong class="free">We give you the following for FREE:</strong>
+
+     
+     <div class="row">
+                 <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car1">
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Cancellation is free of charge although No Show is chargeable (arround 50€)"><i class="fa fa-check-circle"></i>Cancellation</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Amendment Policy: Free of charge"><i class="fa fa-check-circle"></i>Amendment</a></li>
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Theft Waiver (Thw)"><i class="fa fa-check-circle"></i>Theft Waiver </a></li>
+                    <li><a class="similar" href="#" data-toggle="popover" data-content="Collision Damage Waiver (Cdw)"><i class="fa fa-check-circle"></i>Collision Damage Waiver </a></li>
+                </ul>
+
+            </div>
+
+            
+
+     </div>
+     
+        <div class="plus_icon"><img src="images/fur/plus.png" width="30" height="30"></div>
+        
+     
+    </div>
+
+       <div class="col-lg-4 col-md-4 col-sm-4 pop">
+       <div class="row">
+                 <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar passenger_icon" href="#" data-toggle="popover" data-content="This car has 4 seats">X 4</a></li>
+                    <li><a class="similar car_door_icon" href="#" data-toggle="popover" data-content="This car has 3 doors">X 3</a></li>
+                    
+                                                <li><a class="similar car_luggage_icon" href="#" data-toggle="popover"
+                           data-content="This car has 2 Maximum Baggage">X 2</a></li>
+
+                    
+                    <li><a class="similar ac_icon" href="#" data-toggle="popover" data-content="This car has air conditioning">Yes</a></li>
+                    <li><a class="similar automatic_icon" href="#" data-toggle="popover" data-content="This car has Manual Transmission" style="margin-left:0;">Manual</a></li>
+                </ul>
+                 <div class="row_1">
+                <label><b>Only SAR 171.16 a day </b></label>
+                </div>
+            </div>
+
+            
+
+     </div>
+       
+       <div class="row_1">
+       <ul class="list_inline_check_car1">
+       <li><label><b>PLUS your rental includes:</label></b></li>
+                    <li><span class="similar"><i class="fa fa-check-circle"></i>UK VAT STD with taxRate=20.00</span></li>
+                    <li><span class="similar"><i class="fa fa-check-circle"></i>300 Mile/Day</span></li>
+                </ul>
+       
+       </div>
+       
+       </div>  
+
+
+
+</div>
+
+<!--<div class="row_1"><div class="highlight_gray">
+<div class="row">
+<div class="col-lg-12">
+<label><b>Optional Insurances (payable by driver at the counter)</b></label>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-lg-11 col-md-11 col-sm-11">
+<p class="mrgn-top10"><strong>SPPAI:</strong> Yes, I want to add for only GBP 3 a day </p>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-11 col-md-11 col-sm-11">
+<p class="mrgn-top10"><strong>WWI:</strong> Yes, I want to add for only GBP 7.99 a day </p>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-11 col-md-11 col-sm-11">
+<p class="mrgn-top10"><strong>TUC: </strong>Yes, I want to add for only GBP 19.99 a day </p>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-11 col-md-11 col-sm-11">
+<p class="mrgn-top10"><strong>Super Personal Accident & Effects Cover:</strong> Yes, I want to add for only GBP 7 a day </p>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-11 col-md-11 col-sm-11">
+<p class="mrgn-top10"><strong>Super Collision Damage Waiver:</strong> Yes, I want to add Risk Reduction Cover Prestige (SCDW): Further reduces the excess surcharge in the case of damage to the vehicle. Reduction only applies if Loss Damage Waiver (LDW) purchased. for only GBP 13.99 a day </p>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-11 col-md-11 col-sm-11">
+<p class="mrgn-top10"><strong>Roadside Assistance:</strong> Yes, I want to add for only GBP 3 a day </p>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-11 col-md-11 col-sm-11">
+<p class="mrgn-top10"><strong>GOZEN:</strong> Yes, I want to add for only GBP 19.99 a day </p>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>
+</div>
+
+
+</div></div>-->
+
+<div class="row_1">
+
+<a class="arrows fa fa-chevron-right" data-toggle="collapse" data-target="#collapseH" id="collapseP"><span>Optional Equipment</span></a>
+</div>
+
+
+
+<div class="row_1 collapse pos_relative" id="collapseH">
+<div class="highlight_gray">
+
+<div class="row">
+<div class="col-lg-12">
+<label><b>Optional equipments (payable by driver at the counter)</b></label>
+<p>(The images shown below are just sample images and not of the actual equipment’s to be provided)</p>
+</div>
+</div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-2 col-md-2 col-sm-2">
+<img class="img-responsive" src="images/fur/additional-driver.jpg"/>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<label><b>Additional Driver GBP  10 each per day </b></label>
+<p>Additional Driver</p>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="form-group">
+                    <select title="herolist" value="0" class="select-block">
+                      <option value="0" selected="select">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+</div>
+
+<!--<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>-->
+</div>
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-2 col-md-2 col-sm-2">
+<img class="img-responsive" src="images/fur/Child_Booster_Seat.jpg"/>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<label><b>Child Booster Seat GBP  4 each per day  </b></label>
+<p>Child Booster Seat (8-12 Years)</p>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="form-group">
+                    <select title="herolist" value="0" class="select-block">
+                      <option value="0" selected="select">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+</div>
+
+<!--<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>-->
+
+
+
+
+
+</div>
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-2 col-md-2 col-sm-2">
+<img class="img-responsive" src="images/fur/carban_offset.jpg"/>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<label><b>Carbon Offset GBP  .45 each per day </b></label>
+<p>Carbon Offset</p>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="form-group">
+                    <select title="herolist" value="0" class="select-block">
+                      <option value="0" selected="select">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+</div>
+
+<!--<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>-->
+
+
+
+
+
+</div>
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-2 col-md-2 col-sm-2">
+<img class="img-responsive" src="images/fur/Toddler-Seat.jpg"/>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<label><b>Toddler Safety Seat GBP  10.99 each per day </b></label>
+<p>Toddler Safety Seat 9-18Kg, 20Lb-40Lb (1-3 Years)</p>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="form-group">
+                    <select title="herolist" value="0" class="select-block">
+                      <option value="0" selected="select">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+</div>
+
+<!--<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>-->
+
+
+
+
+
+</div>
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-2 col-md-2 col-sm-2">
+<img class="img-responsive" src="images/fur/infant-Seat.jpg"/>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<label><b>Baby Safety Seat GBP  10.99 each per day</b></label>
+<p>Baby Safety Seat 0-13Kg, 0-29Lb (0-12 Months)</p>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="form-group">
+                    <select title="herolist" value="0" class="select-block">
+                      <option value="0" selected="select">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+</div>
+
+<!--<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>-->
+</div>
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-2 col-md-2 col-sm-2">
+<img class="img-responsive" src="images/fur/Child-Seat.jpg"/>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<label><b>Child Safety Seat GBP  10.99 each per day</b></label>
+<p>Child Safety Seat 15-30Kg, 33Lb-66Lb (4-7 Years)</p>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="form-group">
+                    <select title="herolist" value="0" class="select-block">
+                      <option value="0" selected="select">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+</div>
+
+<!--<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>-->
+</div>
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-2 col-md-2 col-sm-2">
+<img class="img-responsive" src="images/fur/b_w_images1.jpg"/>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<label><b>Navigational System GBP  13.99 each per day </b></label>
+<p>Navigational System</p>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="form-group">
+                    <select title="herolist" value="0" class="select-block">
+                      <option value="0" selected="select">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+</div>
+
+<!--<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+
+        </div>
+</div>-->
+</div>
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-2 col-md-2 col-sm-2">
+<img class="img-responsive" src="images/fur/cover-for-your-driver.jpg"/>
+</div>
+
+<div class="col-lg-7 col-md-7 col-sm-7">
+<label><b>Cover For Your Drivers GBP  32.5 each per day</b></label>
+<p>Cover For Your Drivers (Obligatory For Drivers Under 25, Or Under 23 For Rentals In Germany)</p>
+</div>
+
+
+<div class="col-lg-2 col-md-2 col-sm-2">
+<div class="form-group">
+                    <select title="herolist" value="0" class="select-block">
+                      <option value="0" selected="select">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+</div>
+
+<!--<div class="col-lg-1 col-md-1 col-sm-1">
+<div class="checkbox custom_checkbox">
+            <label>
+                <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+              </label>
+        </div>
+</div>-->
+</div>
+<div class="clearfix bdr_bottom"></div>
+
+<div class="row mrgn-top10">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<p>Prices for additional extras are controlled by the local rental company and may be subject to change. The prices listed are Guide Prices only, payable direct to the rental company.</p>
+</div>
+</div>
+
+
+
+
+<div class="row mrgn-top10">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <strong class="free"><a href="#" data-toggle="modal" data-target="#bs-example-modal-lg">Terms and Conditions </a></strong>
+                 </div>  
+                 
+                 
+                 
+</div>
+<div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog"
+                     aria-labelledby="myLargeModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close close1" data-dismiss="modal"><span
+                                        aria-hidden="true">&times;</span><span
+                                        class="sr-only">Close</span></button>
+                                <iframe class="iframe_width" src="term.html"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="col-lg-4">
+      
+            <div class="row_1">
+                <div id="accordion-container">
+                    <h3 class="accordion-header accordion-header-1">Enter Coupon Code</h3>
+                    <div class="accordion-content" style="display:none">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="COUPON35"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <a class="btn btn-block btn-primary" href="#">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row_1">
+                <div id="accordion-container1">
+                    <h3 class="accordion-header accordion-header-1">Redeem My goRewards Points</h3>
+                    <div class="accordion-content" style="display:none">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="105"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <a class="btn btn-block btn-primary" href="#">Redeem</a>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-lg-12">
+                            <label>Redeemable Rewards (Min: 105 , Max: 300 Points)</label>
+                            </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="highlight col-lg-12" style="padding:10px;">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">Price</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">SAR 377.39</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">Coupon Applied</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">-SAR 35</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">goRewards Redeemed (105)</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">-SAR 30</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn"><b>Total</b></p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn"><b>SAR 312.39</b></p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12"><p><b>Additional item to be paid on arrival by the driver</b></p></div>
+                      </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">VAT</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">00.00</p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">LOCATION SURCHARGES</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">00.00</p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">SURCHARGE</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn"> 30.00</p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">Basic Rental-Free Miles</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">00.00</p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-12"><p class="pull-right for_margn"><b>Total AED</b> </p></div>
+                    <div class="col-lg-2 col-md-2 col-sm-12"><p class="pull-right for_margn">30.00</p></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">&nbsp;</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">(SAR 30.64)</p></div>
+                </div>
+                
+                <div class="border_bottom"></div>
+                
+                              <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12"><p class="for_margn"><b class="font_13_blk">Total Payable Now </b></p></div>
+                    <div class="col-lg-7 col-md-7 col-sm-12"><p class="pull-right for_margn">312.39 - 30.64 = SAR  281.75</p></div>
+                </div>
+
+                <div class="border_bottom"></div>
+  
+                              <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12"><p class="for_margn"><b>Total Locally Payable by driver after Arrival </b></p></div>
+                    <div class="col-lg-3 col-md-3 col-sm-12"><p class="pull-right for_margn">AED 30.00</p></div>
+                </div>
+                
+  
+
+ 
+
+
+            </div>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+</div>
+
+    
+    
+</div>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+&nbsp;
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 padding_con_0">
+    <a class="btn btn-block btn-primary pull-right"
+       href="#collapseTwo" data-parent="#accordion" data-toggle="collapse">Continue</a>
+</div>
+<div class="clearfix mrgn-bottom20"></div>
+
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading disabled-accordion">
+    <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            Passenger Information
+            <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+        </a>
+    </h4>
+</div>
+<div id="collapseTwo" class="panel-collapse collapse">
+<div class="panel-body">
+
+<div class="row pd-bottom10">
+<div class="col-lg-8">
+<div class="row">
+<div class="col-lg-12">
+<label><b>Driver Information & Arrival Detail</b></label>
+</div>
+
+</div>
+
+
+
+<div class="row_1 mrgn-tp10">
+<div class="col-lg-12 highlight_gray">
+<p>Its only 2 day 18 hours 57 minutes and 34  seconds until your trips starts.<br>
+ Prices rise and availability is tight the closer you get, book today to avoid disappointment
+</p>
+</div>
+</div>
+
+<div class="row_1 mrgn-tp-bt10">
+<div class="col-lg-12 highlight_gray">
+<p>Congratulation! You’ re chosen the top selling Mini Car at LONDON GATWICK AIRPORT</p>
+</div>
+</div>
+
+
+
+
+
+
+<div class="row mrgn-bottom10">
+    <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="offer_red">
+<img src="images/fur/offer.png">
+</div>
+
+        <a href="#"><img class="img-responsive" src="images/fur/transfer_thumb_2.jpg"></a>
+    </div>
+
+    <div class="col-lg-9 col-md-9 col-sm-9 pop pos_relative">
+     <h3 class="heading_1">MAZDA 2 1.5 AC or<a class="similar" href="#" data-toggle="popover" data-content="The image, make and model of the displayed vehicle is an example of that particular car group type. The vehicle you receive will be similar in size and performance to the one displayed but the actual make and model will depend on the availability at the time of pick-up.">Similar</a><a class="change_link" href="car_search_result.html"> Change</a></h3>
+     
+     <div class="row_1">
+     <label><strong>Pickup Location:</strong>  LONDON GATWICK AIRPORT,GB 10:00AM Fri Oct 31,2014</label>
+     </div>
+     
+     <div class="row_1">
+     <label><strong>DropOff Location: </strong> LONDON GATWICK AIRPORT,GB 10:00AM Thu Nov 20,2014</label>
+     </div>
+     
+     
+     
+     <div class="row_1">
+     
+     <div class="row">
+                 <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list_inline_check_car">
+                    <li><a class="similar passenger_icon" href="#" data-toggle="popover" data-content="This car has 4 seats">X 4</a></li>
+                    <li><a class="similar car_door_icon" href="#" data-toggle="popover" data-content="This car has 3 doors">X 3</a></li>
+                    
+					<li><a class="similar car_luggage_icon" href="#" data-toggle="popover"  data-content="This 
+                    car has 2 Maximum Baggage">X 2</a></li>
+
+                    
+                    
+                    <li><a class="similar ac_icon" href="#" data-toggle="popover" data-content="This car has air conditioning">Yes</a></li>
+                    <li><a class="similar automatic_icon" href="#" data-toggle="popover" data-content="This car has Manual Transmission" style="margin-left:0;">Manual</a></li>
+                </ul>
+                 
+            </div>
+
+            
+
+     </div>
+     
+     </div>
+     
+     
+    </div>
+
+         
+
+
+
+</div>
+
+
+
+
+
+
+<div class="row pd-bottom10">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group">
+            <select title="herolist" value="+91- India" class="select-block">
+                <option>India - +91</option>
+                <option>Pakistan - +92</option>
+                <option>India - +91</option>
+                <option>Pakistan - +92</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="mobile: e.g. 50 -1234567">
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Email ID">
+        </div>
+    </div>
+</div>
+<div class="row highlight mrgn-bottom10">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <label><b>Driver Details</b></label>
+    </div>
+</div>
+<div class="row pd-bottom10 optional_class">
+    
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+        <div class="form-group"><sup>&nbsp;</sup>
+            <select title="herolist" value="Mr." class="select-block">
+                <option>Mr.</option>
+                <option>Mrs.</option>
+                <option>Miss</option>
+                <option>Ms.</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group"><sup>*</sup>
+            <input type="text" class="form-control" placeholder="First Name">
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group"><sup>&nbsp;</sup>
+            <input type="text" class="form-control" placeholder="Middle Name">
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group"><sup>*</sup>
+            <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+    </div>
+</div>
+<div class="row pd-bottom10 optional_class">
+    
+    <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group"><sup>&nbsp;</sup>
+            <select title="herolist" value="Country Code" class="select-block">
+                <option>Pakistan - +92</option>
+                <option selected="selected">India - +91</option>
+                <option>Pakistan - +92</option>
+            </select>
+        </div>
+    </div>
+    
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group"><sup>*</sup>
+            <input type="text" class="form-control" placeholder="Phone No.">
+        </div>
+    </div>
+    
+    
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group"><sup>*</sup>
+            <input type="text" class="form-control" placeholder="Email ID">
+        </div>
+    </div>-->
+    
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn_top20_visible_xs">
+        <div class="form-group"><sup>*</sup>
+            <select title="herolist" value="Driver Residency" class="select-block">
+              <option selected="selected">Driver Residency</option>
+                <option>India</option>
+                <option>Saudi Arabia</option>
+                <option>Pakistan</option>
+                <option>London</option>
+            </select>
+        </div>
+    </div>
+    
+    
+    
+</div>
+<div class="row highlight mrgn-bottom10">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
+        <label><b>Arrival Details</b></label>
+    </div>
+</div>
+<div class="my-container2">
+<div class="row ">
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <label class="radio wht">
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio" checked="checked">
+                      Arrival in Person</label>
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2">
+                    <label class="radio wht">
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio">
+                      Arrival by flight</label>
+                  </div>
+                  
+                </div>
+</div>
+<div class="row mrgn-bottom10 pd-top10">
+    <div class="col-lg-3 col-md-3 col-sm-3">
+        <label>Special Request if Any</label>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9">
+        <textarea class="form-control" rows="2"></textarea>
+    </div>
+</div>
+
+
+
+</div>
+<div class="col-lg-4">
+      
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="highlight col-lg-12" style="padding:10px;">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">Price</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">SAR 377.39</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">Coupon Applied</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">-SAR 35</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">goRewards Redeemed (105)</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">-SAR 30</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn"><b>Total</b></p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn"><b>SAR 312.39</b></p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12"><p><b>Additional item to be paid on arrival by the driver</b></p></div>
+                      </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">VAT</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">00.00</p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">LOCATION SURCHARGES</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">00.00</p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">SURCHARGE</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn"> 30.00</p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">Basic Rental-Free Miles</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">00.00</p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-12"><p class="pull-right for_margn"><b>Total AED</b> </p></div>
+                    <div class="col-lg-2 col-md-2 col-sm-12"><p class="pull-right for_margn">30.00</p></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12"><p class="for_margn">&nbsp;</p></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12"><p class="pull-right for_margn">(SAR 30.64)</p></div>
+                </div>
+                
+                <div class="border_bottom"></div>
+                
+                              <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12"><p class="for_margn"><b>Total Payable Now </b></p></div>
+                    <div class="col-lg-7 col-md-7 col-sm-12"><p class="pull-right for_margn">312.39 - 30.64 = SAR  281.75</p></div>
+                </div>
+
+                <div class="border_bottom"></div>
+  
+                              <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12"><p class="for_margn"><b>Total Locally Payable by driver after Arrival </b></p></div>
+                    <div class="col-lg-3 col-md-3 col-sm-12"><p class="pull-right for_margn">AED 30.00</p></div>
+                </div>
+                
+  
+
+ 
+
+
+            </div>
+        </div>
+        </div>
+</div>
+</div>
+
+
+
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 hidden-xs">
+&nbsp;
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 padding_con_0">
+    <a class="btn btn-block btn-primary pull-right" href="#collapseThree" data-parent="#accordion"
+       data-toggle="collapse">Continue</a>
+</div>
+
+<div class="clearfix mrgn-bottom20"></div>
+
+
+</div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading disabled-accordion">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Purchase
+                <i class="indicator glyphicon glyphicon-chevron-right pull-right"></i>
+            </a>
+        </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+            <div class="row  mrgn_auto mrgn-bottom10">
+                <!--<div class="col-lg-12 col-md-12 col-sm-12 highlight ">
+                    <label><b>Hotel Cancellation Conditions</b></label>
+                </div>-->
+                <div class="">
+                    <!--<p class="mrgn-top10">
+                        Please note that this item has special booking conditions which are applicable to any reductions
+                        or
+                        cancellations made within the deadlines, prior to start date, listed below:
+                    </p>-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr class="highlight ">
+                                        <th>Cancellation Charges</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td> If you cancel booking between 16 Nov 2014 00 : 00 : 00 AM to 19 Nov 2014 00
+                                            : 00 : 00 AM then Cancellation Charges will be SAR 76.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>If you cancel booking between 12 Nov 2014 00 : 00 : 00 AM to 15 Nov 2014 00
+                                            : 00 : 00 AM then Cancellation Charges will be SAR 76.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>Note:- In case of multiple cancellation policy with same date
+                                            range if client cancel boking then highest price will be charged.<br>
+                                            * Date and time is calculated based on the locel time of destination.</p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="checkbox custom_checkbox cancellation_policy">
+                        <label>
+                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                            I Acknowledge that driver must have a credit card at his name 
+                        </label>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="row pd-bottom10">
+                <div class="col-lg-12">
+                    <div class="checkbox custom_checkbox cancellation_policy">
+                        <label>
+                            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                            I have read and accept the Cancellation Policy and the
+                        </label>
+                        <a class="link_paragraph" href="#" data-toggle="modal" data-target="#bs-example-modal-lg-1">Booking
+                            Terms and Conditions</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="bs-example-modal-lg-1" tabindex="-1" role="dialog"
+                     aria-labelledby="myLargeModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close close1" data-dismiss="modal"><span
+                                        aria-hidden="true">&times;</span><span
+                                        class="sr-only">Close</span></button>
+                                <iframe class="iframe_width" src="cancellation.html"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pull-right padding_con_0">
+                <a href="car_booking_confirmation.html" class="btn btn-block pull-right btn-primary">Purchase</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+    <div class="container-fluid">
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12  col-xs-12 ">
+                    <ul class="footer_nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us </a></li>
+                        <li><a href="#">Email </a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#"> F.A.Q. </a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a class="no" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-lg-5 col-md-4 col-sm-9 col-xs-12 ">
+                    <div class="col-lg-5 col-md-5 col-sm-3">
+                        <strong class="newsletter">Newsletter</strong>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-9">
+                        <div class="form-group">
+                            <input type="text" value="Enter your Email Address" class="form-control bdr" id="inputEmail"
+                                   placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+                    <div class="social_media_con">
+                        <ul class="list">
+                            <li><a href="#" class="zoomimg"><img src="images/fur/facebook.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/twitter.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/google.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/instagram.png"></a></li>
+                            <li><a href="#" class="zoomimg"><img src="images/fur/linkedin.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container  my-container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
+                    <div class="powered">Powered by: Travel Cloud Suite</div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 ">
+                    <div class="copy">
+                        GoFursan &copy; 2014. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="javascript/fur/jquery.min.v.1.11.1.js"></script>
+<script src="javascript/fur/bootstrap.min.js"></script>
+<script src="javascript/fur/bootstrap-select1.js"></script>
+<script src="javascript/fur/flatui-checkbox.js"></script>
+<script src="javascript/fur/flatui-radio.js"></script>
+<script src="javascript/fur/application.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(function () {
+            $("select[title='herolist']").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
+        });
+$('.pop a').popover({ trigger: "hover",  placement: 'top' });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".check_div").hide();
+        $(".check_SH").removeClass('checked');
+        $('.check_SH').click(function () {
+            if ($(".check_SH").hasClass("checked")) {
+                $(".check_div").hide();
+            }
+            else {
+                $(".check_div").show();
+            }
+        });
+        $('#collapseP').on('click', function () {
+            /*alert('sub accordion');*/
+            $('#collapseP').toggleClass('fa-chevron-down fa-chevron-right', function () {
+                $('#collapseH').slideToggle(slow);
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        function toggleChevron(e) {
+            $(e.target)
+                    .prev('.panel-heading')
+                    .find("i.indicator")
+                    .toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        }
+
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+        function toggleColor(e) {
+           $(e.target).siblings().toggleClass('current');
+           $(e.target).siblings().removeClass('disabled-accordion');
+            $('#collapseP').parent().siblings().removeClass('current');
+            $('#collapseP').parent().removeClass('current');
+        }
+        $('#accordion').on('shown.bs.collapse', toggleColor);
+        $('#accordion').on('hidden.bs.collapse', toggleColor);
+        $('.popover-dismiss').popover({
+            trigger: 'hover'
+        });
+        var $active = true;
+        $('.panel-title > a').click(function (e) {
+            e.preventDefault();
+        });
+        if (!$active) {
+            $active = true;
+            $('.panel-title > a').attr('data-toggle', 'collapse');
+            $('.panel-collapse').collapse({'toggle': true, 'parent': '#accordion'});
+
+        } else {
+            $active = false;
+            $('.panel-title > a').removeAttr('data-toggle');
+        }
+        $('.pull-right').click(function () {
+            $(this).parent().parent().siblings().children().children().attr('data-toggle', 'collapse');
+        });
+
+        //$('#myModal').modal(remote);
+
+        /* coupon code accordion js */
+        $('.accordion-header').toggleClass('active-header');
+        var contentwidth = $('.accordion-header').width();
+        $('.accordion-content').css({'width' : contentwidth });
+        $('.accordion-content').slideDown().toggleClass('open-content');
+        $('.accordion-header').click(function () {
+            if($(this).is('.inactive-header')) {
+                $(this).toggleClass('active-header').toggleClass('inactive-header');
+                $(this).next().slideToggle().toggleClass('open-content');
+            }
+            else {
+                $(this).toggleClass('active-header').toggleClass('inactive-header');
+                $(this).next().slideToggle().toggleClass('open-content');
+            }
+        });
+        $('.accordion-content').css({'display' : 'none' });
+    });
+	
+	  /* coupon code accordion end here  */
+	
+	
+</script>
+
+</body>
+</html>
